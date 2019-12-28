@@ -1,0 +1,19 @@
+{
+  "name": "equipment-attributes",
+  "version": "1.0.0",
+  "description": "Source of truth for equipment attributes by category",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TractorZoom/equipment-attributes.git"
+  },
+  "author": "Tractor Zoom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TractorZoom/equipment-attributes/issues"
+  },
+  "homepage": "https://github.com/TractorZoom/equipment-attributes#readme"
+}
