@@ -6,6 +6,21 @@ Source of truth for equipment attributes by category
 
 [![Publish Status](https://github.com/TractorZoom/equipment-attributes/workflows/publish/badge.svg)](https://github.com/TractorZoom/equipment-attributes/actions) [![PR Verify Status](https://github.com/TractorZoom/equipment-attributes/workflows/pull_request_verify/badge.svg)](https://github.com/TractorZoom/equipment-attributes/actions)
 
+## Install
+
+To download make sure the Tractor Zoom GitHub org has been added to your projects `.npmrc` file:
+
+```
+registry=https://registry.npmjs.org // if you were currently using npm
+@tractorzoom:registry=https://npm.pkg.github.com
+```
+
+Then:
+
+```
+npm i --save @tractorzoom/equipment-attributes
+```
+
 ## Contributing
 
 Install node modules using node `10.x`

@@ -8,6 +8,9 @@
         "type": "git",
         "url": "git+https://github.com/TractorZoom/equipment-attributes.git"
     },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "private": true,
     "engines": {
         "node": "10.x"
