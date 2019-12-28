@@ -14,11 +14,15 @@
     },
     "main": "src/index.js",
     "scripts": {
+        "build": "./node_modules/.bin/babel src --out-dir lib --copy-files",
         "commit": "git-cz",
         "pretty-quick": "pretty-quick",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
+        "@babel/cli": "7.7.5",
+        "@babel/core": "7.7.5",
+        "@babel/preset-env": "7.7.6",
         "@commitlint/cli": "8.2.0",
         "@commitlint/config-conventional": "8.2.0",
         "commitizen": "4.0.3",
