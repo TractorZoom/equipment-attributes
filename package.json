@@ -1,19 +1,35 @@
 {
-  "name": "@tractorzoom/equipment-attributes",
-  "version": "1.0.0",
-  "description": "Source of truth for equipment attributes by category",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TractorZoom/equipment-attributes.git"
-  },
-  "author": "Tractor Zoom",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TractorZoom/equipment-attributes/issues"
-  },
-  "homepage": "https://github.com/TractorZoom/equipment-attributes#readme"
+    "name": "@tractorzoom/equipment-attributes",
+    "version": "1.0.0",
+    "description": "Source of truth for equipment attributes by category",
+    "author": "Tractor Zoom",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TractorZoom/equipment-attributes.git"
+    },
+    "private": true,
+    "engines": {
+        "node": "10.x"
+    },
+    "main": "src/index.js",
+    "scripts": {
+        "commit": "git-cz",
+        "pretty-quick": "pretty-quick",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "8.2.0",
+        "@commitlint/config-conventional": "8.2.0",
+        "commitizen": "4.0.3",
+        "cz-conventional-changelog": "3.0.2",
+        "husky": "3.1.0",
+        "prettier": "1.19.1",
+        "pretty-quick": "2.0.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    }
 }
