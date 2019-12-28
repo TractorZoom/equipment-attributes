@@ -1,5 +1,5 @@
 {
-  "name": "equipment-attributes",
+  "name": "@tractorzoom/equipment-attributes",
   "version": "1.0.0",
   "description": "Source of truth for equipment attributes by category",
   "main": "index.js",
