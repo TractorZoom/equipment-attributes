@@ -17,7 +17,7 @@
         "build": "./node_modules/.bin/babel src --out-dir lib --copy-files",
         "commit": "git-cz",
         "pretty-quick": "pretty-quick",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "jest"
     },
     "devDependencies": {
         "@babel/cli": "7.7.5",
@@ -28,6 +28,7 @@
         "commitizen": "4.0.3",
         "cz-conventional-changelog": "3.0.2",
         "husky": "3.1.0",
+        "jest": "24.9.0",
         "prettier": "1.19.1",
         "pretty-quick": "2.0.1"
     },
