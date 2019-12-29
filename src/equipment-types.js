@@ -8,7 +8,7 @@ const PLANTING = 'Planting'
 const TILLAGE = 'Tillage'
 const TRACTORS = 'Tractors'
 
-export default {
+export const EQUIPMENT_TYPES = {
     AG_TRAILERS,
     CHEMICAL_APPLICATORS,
     HARVESTING,

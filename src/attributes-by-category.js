@@ -1,4 +1,4 @@
-import EQUIPMENT_TYPES from './equipment-types'
+import {EQUIPMENT_TYPES} from './equipment-types'
 
 const DEFAULT_ATTRIBUTES = ['category', 'description', 'make', 'model', 'price', 'year']
 

@@ -1,5 +1,5 @@
 import {getAttributesForCategory} from '../src/attributes-by-category'
-import EQUIPMENT_TYPES from '../src/equipment-types'
+import {EQUIPMENT_TYPES} from '../src/equipment-types'
 
 const DEFAULT_ATTRIBUTES = ['category', 'description', 'make', 'model', 'price', 'year']
 
