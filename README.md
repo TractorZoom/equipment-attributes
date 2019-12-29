@@ -21,6 +21,26 @@ Then:
 npm i --save @tractorzoom/equipment-attributes
 ```
 
+## Usage
+
+#### `COMMON_ATTRIBUTES`
+
+Array list of common attribute strings across all equipment types. [See more](src/attributes-by-category.js)
+
+#### `EQUIPMENT_TYPES`
+
+Object of values for each each equipment category. [See more](src/equipment-types.js)
+
+#### `getAttributesForCategory`
+
+Function to get all equipment attributes for a given category. Returns an array list of attribute strings.
+
+```
+import {EQUIPMENT_TYPES, getAttributesForCategory} from '@tractorzoom/equipment-attributes'
+
+const attributesForCategory = getAttributesForCategory(EQUIPMENT_TYPES.HARVESTING)
+```
+
 ## Contributing
 
 Install node modules using node `10.x`
