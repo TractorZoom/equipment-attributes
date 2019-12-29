@@ -1,7 +1,8 @@
 const equipmentTypes = require('./equipment-types')
+const attributesByCategory = require('./attributes-by-category')
 
 module.exports = {
-    COMMON_ATTRIBUTES: equipmentTypes.COMMON_ATTRIBUTES,
+    COMMON_ATTRIBUTES: attributesByCategory.COMMON_ATTRIBUTES,
     EQUIPMENT_TYPES: equipmentTypes.EQUIPMENT_TYPES,
-    getAttributesForCategory: require('./attributes-by-category').getAttributesForCategory,
+    getAttributesForCategory: attributesByCategory.getAttributesForCategory,
 }
