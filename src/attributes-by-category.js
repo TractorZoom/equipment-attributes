@@ -1,6 +1,6 @@
 import {EQUIPMENT_TYPES} from './equipment-types'
 
-const DEFAULT_ATTRIBUTES = ['category', 'description', 'make', 'model', 'price', 'year']
+export const COMMON_ATTRIBUTES = ['category', 'description', 'make', 'model', 'price', 'year']
 
 const ATTRIBUTES_BY_CATEGORY = {
     [EQUIPMENT_TYPES.AG_TRAILERS]: ['subcategory', 'length', 'serial', 'condition'],
@@ -61,5 +61,5 @@ const ATTRIBUTES_BY_CATEGORY = {
 }
 
 export const getAttributesForCategory = categoryName => {
-    return [...DEFAULT_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]]
+    return [...COMMON_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]]
 }
