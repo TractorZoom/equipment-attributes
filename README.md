@@ -31,6 +31,14 @@ Array list of common attribute strings across all equipment types. [See more](sr
 
 Object of values for each each equipment category. [See more](src/equipment-types.js)
 
+#### `IDENTIFYING_ATTRIBUTES`
+
+Array list of identifying attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
+
+#### `VALUE_ATTRIBUTES`
+
+Array list of value attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
+
 #### `getAttributesForCategory`
 
 Function to get all equipment attributes for a given category. Returns an array list of attribute strings.

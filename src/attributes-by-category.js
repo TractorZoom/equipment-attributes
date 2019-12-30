@@ -1,63 +1,44 @@
+import {
+    ACRES,
+    CAPACITY,
+    CATEGORY,
+    CONDITION,
+    DESCRIPTION,
+    DRIVE,
+    HOURS,
+    LENGTH,
+    MAKE,
+    MODEL,
+    NUMBER_OF_BOTTOMS,
+    NUMBER_OF_ROWS,
+    NUMBER_OF_SHANKS,
+    PRICE,
+    REAR_PTO,
+    ROW_SPACING,
+    SEPARATOR_HOURS,
+    SERIAL,
+    SUBCATEGORY,
+    WIDTH,
+    YEAR,
+} from './attributes'
 import {EQUIPMENT_TYPES} from './equipment-types'
 
-export const COMMON_ATTRIBUTES = ['category', 'description', 'make', 'model', 'price', 'year']
+export const IDENTIFYING_ATTRIBUTES = [YEAR, MAKE, MODEL, CATEGORY, SUBCATEGORY]
+
+export const VALUE_ATTRIBUTES = [PRICE]
+
+export const COMMON_ATTRIBUTES = [...IDENTIFYING_ATTRIBUTES, ...VALUE_ATTRIBUTES, CONDITION, DESCRIPTION, SERIAL]
 
 const ATTRIBUTES_BY_CATEGORY = {
-    [EQUIPMENT_TYPES.AG_TRAILERS]: ['subcategory', 'length', 'serial', 'condition'],
-    [EQUIPMENT_TYPES.CHEMICAL_APPLICATORS]: [
-        'subcategory',
-        'hours',
-        'numberOfShanks',
-        'width',
-        'capacity',
-        'serial',
-        'drive',
-        'condition',
-    ],
-    [EQUIPMENT_TYPES.HARVESTING]: [
-        'subcategory',
-        'hours',
-        'separatorHours',
-        'width',
-        'numberOfRows',
-        'rowSpacing',
-        'serial',
-        'drive',
-        'condition',
-    ],
-    [EQUIPMENT_TYPES.HAY_AND_FORAGE]: ['subcategory', 'width', 'hours', 'serial', 'condition'],
-    [EQUIPMENT_TYPES.MANURE_HANDLING]: [
-        'subcategory',
-        'hours',
-        'numberOfShanks',
-        'width',
-        'capacity',
-        'serial',
-        'drive',
-        'condition',
-    ],
-    [EQUIPMENT_TYPES.OTHER_EQUIPMENT]: ['subcategory'],
-    [EQUIPMENT_TYPES.PLANTING]: [
-        'subcategory',
-        'numberOfRows',
-        'rowSpacing',
-        'width',
-        'hours',
-        'acres',
-        'serial',
-        'condition',
-    ],
-    [EQUIPMENT_TYPES.TILLAGE]: [
-        'subcategory',
-        'width',
-        'numberOfBottoms',
-        'numberOfRows',
-        'numberOfShanks',
-        'rowSpacing',
-        'serial',
-        'condition',
-    ],
-    [EQUIPMENT_TYPES.TRACTORS]: ['hours', 'serial', 'drive', 'rearPTO', 'condition'],
+    [EQUIPMENT_TYPES.AG_TRAILERS]: [LENGTH],
+    [EQUIPMENT_TYPES.CHEMICAL_APPLICATORS]: [HOURS, NUMBER_OF_SHANKS, WIDTH, CAPACITY, DRIVE],
+    [EQUIPMENT_TYPES.HARVESTING]: [HOURS, SEPARATOR_HOURS, WIDTH, NUMBER_OF_ROWS, ROW_SPACING, DRIVE],
+    [EQUIPMENT_TYPES.HAY_AND_FORAGE]: [WIDTH, HOURS],
+    [EQUIPMENT_TYPES.MANURE_HANDLING]: [HOURS, NUMBER_OF_SHANKS, WIDTH, CAPACITY, DRIVE],
+    [EQUIPMENT_TYPES.OTHER_EQUIPMENT]: [],
+    [EQUIPMENT_TYPES.PLANTING]: [NUMBER_OF_ROWS, ROW_SPACING, WIDTH, HOURS, ACRES],
+    [EQUIPMENT_TYPES.TILLAGE]: [WIDTH, NUMBER_OF_BOTTOMS, NUMBER_OF_ROWS, NUMBER_OF_SHANKS, ROW_SPACING],
+    [EQUIPMENT_TYPES.TRACTORS]: [HOURS, DRIVE, REAR_PTO],
 }
 
 export const getAttributesForCategory = categoryName => {
