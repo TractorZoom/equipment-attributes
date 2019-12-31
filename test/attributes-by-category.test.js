@@ -6,6 +6,7 @@ import {
     CATEGORY,
     CENTER_BULK_FILL,
     CHOPPER,
+    CITY,
     CONDITION,
     DESCRIPTION,
     DRIVE,
@@ -16,6 +17,7 @@ import {
     HORSEPOWER,
     LENGTH,
     LOADER,
+    LOT_NUMBER,
     MAKE,
     MILES,
     MODEL,
@@ -32,17 +34,33 @@ import {
     SEPARATOR_HOURS,
     SERIAL,
     SPREADER,
+    STATE,
     SUBCATEGORY,
     TAG_AXLE,
     THREE_POINT_HITCH,
     TRANSMISSION,
     WIDTH,
     YEAR,
+    ZIP_CODE,
 } from '../src/attributes'
 import {getAttributesForCategory} from '../src/attributes-by-category'
 import {EQUIPMENT_TYPES} from '../src/equipment-types'
 
-const DEFAULT_ATTRIBUTES = [YEAR, MAKE, MODEL, CATEGORY, SUBCATEGORY, PRICE, CONDITION, DESCRIPTION, SERIAL]
+const DEFAULT_ATTRIBUTES = [
+    YEAR,
+    MAKE,
+    MODEL,
+    CATEGORY,
+    SUBCATEGORY,
+    LOT_NUMBER,
+    CITY,
+    STATE,
+    ZIP_CODE,
+    PRICE,
+    CONDITION,
+    DESCRIPTION,
+    SERIAL,
+]
 
 test('attributes for ag trailers', () => {
     const actual = getAttributesForCategory(EQUIPMENT_TYPES.AG_TRAILERS)
