@@ -35,6 +35,10 @@ Object of values for each each equipment category. [See more](src/equipment-type
 
 Array list of identifying attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
 
+#### `LOCATION_ATTRIBUTES`
+
+Array list of location attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
+
 #### `VALUE_ATTRIBUTES`
 
 Array list of value attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
