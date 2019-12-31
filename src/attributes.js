@@ -4,12 +4,13 @@
 export const ACRES = 'acres'
 
 /*
-    NEEDS INFO
+    Switch if equipment has belly mower
 */
 export const BELLY_MOWER = 'bellyMower'
 
 /*
-    NEEDS INFO
+    Select of cab types
+    Options: Standard, Deluxe, Buddy Seat
 */
 export const CAB = 'cab'
 
@@ -25,7 +26,7 @@ export const CAPACITY = 'capacity'
 export const CATEGORY = 'category'
 
 /*
-    NEEDS INFO
+    Switch if equipment is center bulk fill
 */
 export const CENTER_BULK_FILL = 'centerBulkFill'
 
@@ -35,7 +36,7 @@ export const CENTER_BULK_FILL = 'centerBulkFill'
 export const CITY = 'city'
 
 /*
-    NEEDS INFO
+    Switch if equipment has chopper
 */
 export const CHOPPER = 'chopper'
 
@@ -57,19 +58,16 @@ export const DESCRIPTION = 'description'
 export const DRIVE = 'drive'
 
 /*
-    NEEDS INFO
+    Select of emission types
+    Options: DEF, DPF, EGR, No Emissions
 */
 export const EMISSIONS = 'emissions'
 
 /*
-    NEEDS INFO
+    Select of front tire types
+    Options: Singles, Duals
 */
-export const FRONT_DUALS = 'frontDuals'
-
-/*
-    NEEDS INFO
-*/
-export const FRONT_SINGLES = 'frontSingles'
+export const FRONT_TIRES = 'frontTires'
 
 /*
     Input of equipment hours
@@ -87,7 +85,7 @@ export const HORSEPOWER = 'horsepower'
 export const LENGTH = 'length'
 
 /*
-    NEEDS INFO
+    Switch if equipment has loader
 */
 export const LOADER = 'loader'
 
@@ -139,14 +137,9 @@ export const NUMBER_OF_SHANKS = 'numberOfShanks'
 export const PRICE = 'price'
 
 /*
-    NEEDS INFO
+    Switch if equipment has powerfold bin
 */
 export const POWERFOLD_BIN = 'powerfoldBin'
-
-/*
-    NEEDS INFO
-*/
-export const REAR_DUALS = 'rearDuals'
 
 /*
     Select of rear PTO
@@ -155,7 +148,13 @@ export const REAR_DUALS = 'rearDuals'
 export const REAR_PTO = 'rearPTO'
 
 /*
-    NEEDS INFO
+    Select of rear tire types
+    Options: Singles, Duals
+*/
+export const REAR_TIRES = 'rearTires'
+
+/*
+    Switch if equipment has row cleaners
 */
 export const ROW_CLEANERS = 'rowCleaners'
 
@@ -175,7 +174,7 @@ export const SEPARATOR_HOURS = 'separatorHours'
 export const SERIAL = 'serial'
 
 /*
-    NEEDS INFO
+    Switch if equipment has spreader
 */
 export const SPREADER = 'spreader'
 
@@ -191,20 +190,26 @@ export const STATE = 'state'
 export const SUBCATEGORY = 'subcategory'
 
 /*
-    NEEDS INFO
+    Switch if equipment has tag axle
 */
 export const TAG_AXLE = 'tagAxle'
 
 /*
-    NEEDS INFO
+    Switch if equipment has three point hitch
 */
 export const THREE_POINT_HITCH = 'threePointHitch'
 
 /*
-    Select of transmission for equipment
+    Select of transmission for other equipment category
     Options: Automatic, Manual
 */
 export const TRANSMISSION = 'transmission'
+
+/*
+    Select of transmission type for tractor category
+    Options: Powershift, Hydrostatic, Standard
+*/
+export const TRANSMISSION_TYPE = 'transmissionType'
 
 /*
     Input of width for equipment

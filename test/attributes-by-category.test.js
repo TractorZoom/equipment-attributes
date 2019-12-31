@@ -11,8 +11,7 @@ import {
     DESCRIPTION,
     DRIVE,
     EMISSIONS,
-    FRONT_DUALS,
-    FRONT_SINGLES,
+    FRONT_TIRES,
     HOURS,
     HORSEPOWER,
     LENGTH,
@@ -27,7 +26,7 @@ import {
     NUMBER_OF_SHANKS,
     POWERFOLD_BIN,
     PRICE,
-    REAR_DUALS,
+    REAR_TIRES,
     REAR_PTO,
     ROW_CLEANERS,
     ROW_SPACING,
@@ -71,7 +70,16 @@ test('attributes for ag trailers', () => {
 
 test('attributes for chemical applicators', () => {
     const actual = getAttributesForCategory(EQUIPMENT_TYPES.CHEMICAL_APPLICATORS)
-    const expectedAttributes = [...DEFAULT_ATTRIBUTES, CAPACITY, DRIVE, HOURS, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH]
+    const expectedAttributes = [
+        ...DEFAULT_ATTRIBUTES,
+        CAPACITY,
+        DRIVE,
+        EMISSIONS,
+        HOURS,
+        HORSEPOWER,
+        NUMBER_OF_SHANKS,
+        WIDTH,
+    ]
 
     expect(actual).toStrictEqual(expectedAttributes)
 })
@@ -82,8 +90,8 @@ test('attributes for harvesting', () => {
         ...DEFAULT_ATTRIBUTES,
         CHOPPER,
         DRIVE,
-        FRONT_DUALS,
-        FRONT_SINGLES,
+        EMISSIONS,
+        FRONT_TIRES,
         HOURS,
         HORSEPOWER,
         NUMBER_OF_ROWS,
@@ -165,12 +173,13 @@ test('attributes for tractors', () => {
         BELLY_MOWER,
         CAB,
         DRIVE,
-        FRONT_DUALS,
+        EMISSIONS,
+        FRONT_TIRES,
         HOURS,
         HORSEPOWER,
         LOADER,
-        REAR_DUALS,
         REAR_PTO,
+        REAR_TIRES,
         THREE_POINT_HITCH,
     ]
 
