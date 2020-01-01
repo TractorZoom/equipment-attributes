@@ -1,227 +1,457 @@
 /* 
     Input of number of acres worked
 */
-export const ACRES = 'acres'
+export const ACRES = {
+    input: true,
+    name: 'acres',
+}
 
 /*
     Switch if equipment has belly mower
 */
-export const BELLY_MOWER = 'bellyMower'
+export const BELLY_MOWER = {
+    name: 'bellyMower',
+    switch: true,
+}
 
 /*
     Select of cab types
     Options: Standard, Deluxe, Buddy Seat
 */
-export const CAB = 'cab'
+export const CAB = {
+    name: 'cab',
+    options: [
+        {
+            name: 'Standard',
+            value: 0,
+        },
+        {
+            name: 'Deluxe',
+            value: 1,
+        },
+        {
+            name: 'Buddy Seat',
+            value: 2,
+        },
+    ],
+    select: true,
+}
 
 /*
     Input of capacity of equipment
 */
-export const CAPACITY = 'capacity'
+export const CAPACITY = {
+    input: true,
+    name: 'capacity',
+}
 
 /*
     Select of equipment categories
     Options: Ag Trailers, Chemical Applicators, Harvesting, Hay and Forage, Manure Handling, Other Equipment, Planting, Tillage, Tractors
 */
-export const CATEGORY = 'category'
+export const CATEGORY = {
+    name: 'category',
+    options: [],
+    select: true,
+}
 
 /*
     Switch if equipment is center bulk fill
 */
-export const CENTER_BULK_FILL = 'centerBulkFill'
+export const CENTER_BULK_FILL = {
+    name: 'centerBulkFill',
+    switch: true,
+}
 
 /*
     Input of city
 */
-export const CITY = 'city'
+export const CITY = {
+    input: true,
+    name: 'city',
+}
 
 /*
     Switch if equipment has chopper
 */
-export const CHOPPER = 'chopper'
+export const CHOPPER = {
+    name: 'chopper',
+    switch: true,
+}
 
 /*
     Select of equipment condition
     Options: New, Used
 */
-export const CONDITION = 'condition'
+export const CONDITION = {
+    name: 'condition',
+    options: [
+        {
+            name: 'New',
+            value: 0,
+        },
+        {
+            name: 'Used',
+            value: 1,
+        },
+    ],
+    select: true,
+}
 
 /*
     Input of auctioneer description
 */
-export const DESCRIPTION = 'description'
+export const DESCRIPTION = {
+    input: true,
+    name: 'description',
+}
 
 /*
     Select of equipment drive
     Options: 
 */
-export const DRIVE = 'drive'
+export const DRIVE = {
+    name: 'drive',
+    options: [],
+    select: true,
+}
 
 /*
     Select of emission types
     Options: DEF, DPF, EGR, No Emissions
 */
-export const EMISSIONS = 'emissions'
+export const EMISSIONS = {
+    name: 'emissions',
+    options: [
+        {
+            name: 'DEF',
+            value: 0,
+        },
+        {
+            name: 'DPF',
+            value: 1,
+        },
+        {
+            name: 'EGR',
+            value: 2,
+        },
+        {
+            name: 'No Emissions',
+            value: 3,
+        },
+    ],
+    select: true,
+}
 
 /*
     Select of front tire types
     Options: Singles, Duals
 */
-export const FRONT_TIRES = 'frontTires'
+export const FRONT_TIRES = {
+    name: 'frontTires',
+    options: [
+        {
+            name: 'Singles',
+            value: 0,
+        },
+        {
+            name: 'Duals',
+            value: 1,
+        },
+    ],
+    select: true,
+}
 
 /*
     Input of equipment hours
 */
-export const HOURS = 'hours'
+export const HOURS = {
+    input: true,
+    name: 'hours',
+}
 
 /*
     Input of equipment horsepower
 */
-export const HORSEPOWER = 'horsepower'
+export const HORSEPOWER = {
+    input: true,
+    name: 'horsepower',
+}
 
 /*
     Input of equipment length
 */
-export const LENGTH = 'length'
+export const LENGTH = {
+    input: true,
+    name: 'length',
+}
 
 /*
     Switch if equipment has loader
 */
-export const LOADER = 'loader'
+export const LOADER = {
+    name: 'loader',
+    switch: true,
+}
 
 /*
     Input of lot number for equipment in an auction
 */
-export const LOT_NUMBER = 'lotNumber'
+export const LOT_NUMBER = {
+    input: true,
+    name: 'lotNumber',
+}
 
 /*
     Select of makes for equipment
     Options: Dynamic list from database
 */
-export const MAKE = 'make'
+export const MAKE = {
+    name: 'make',
+    options: [],
+    select: true,
+}
 
 /*
     Input of miles driven for equipment
 */
-export const MILES = 'miles'
+export const MILES = {
+    input: true,
+    name: 'miles',
+}
 
 /*
     Select of models based on make for equipment
     Options: Dynamic list from database based on make
 */
-export const MODEL = 'model'
+export const MODEL = {
+    name: 'model',
+    options: [],
+    select: true,
+}
 
 /*
     Input of number of bales for equipment
 */
-export const NUMBER_OF_BALES = 'numberOfBales'
+export const NUMBER_OF_BALES = {
+    input: true,
+    name: 'numberOfBales',
+}
 
 /*
     Input of number of bottoms for equipment
 */
-export const NUMBER_OF_BOTTOMS = 'numberOfBottoms'
+export const NUMBER_OF_BOTTOMS = {
+    input: true,
+    name: 'numberOfBottoms',
+}
 
 /*
     Input of number of rows for equipment
 */
-export const NUMBER_OF_ROWS = 'numberOfRows'
+export const NUMBER_OF_ROWS = {
+    input: true,
+    name: 'numberOfRows',
+}
 
 /*
     Input of number of shanks for equipment
 */
-export const NUMBER_OF_SHANKS = 'numberOfShanks'
+export const NUMBER_OF_SHANKS = {
+    input: true,
+    name: 'numberOfShanks',
+}
 
 /*
     Input of price for equipment 
 */
-export const PRICE = 'price'
+export const PRICE = {
+    input: true,
+    name: 'price',
+}
 
 /*
     Switch if equipment has powerfold bin
 */
-export const POWERFOLD_BIN = 'powerfoldBin'
+export const POWERFOLD_BIN = {
+    name: 'powerfoldBin',
+    switch: true,
+}
 
 /*
     Select of rear PTO
     Options: Yes, No
 */
-export const REAR_PTO = 'rearPTO'
+export const REAR_PTO = {
+    name: 'rearPTO',
+    options: [
+        {
+            name: 'No',
+            value: 0,
+        },
+        {
+            name: 'Yes',
+            value: 1,
+        },
+    ],
+    select: true,
+}
 
 /*
     Select of rear tire types
     Options: Singles, Duals
 */
-export const REAR_TIRES = 'rearTires'
+export const REAR_TIRES = {
+    name: 'rearTires',
+    options: [
+        {
+            name: 'Singles',
+            value: 0,
+        },
+        {
+            name: 'Duals',
+            value: 1,
+        },
+    ],
+    select: true,
+}
 
 /*
     Switch if equipment has row cleaners
 */
-export const ROW_CLEANERS = 'rowCleaners'
+export const ROW_CLEANERS = {
+    name: 'rowCleaners',
+    switch: true,
+}
 
 /*
     Input of row spacing for equipment
 */
-export const ROW_SPACING = 'rowSpacing'
+export const ROW_SPACING = {
+    input: true,
+    name: 'rowSpacing',
+}
 
 /*
     Input of separator hours for equipment
 */
-export const SEPARATOR_HOURS = 'separatorHours'
+export const SEPARATOR_HOURS = {
+    input: true,
+    name: 'separatorHours',
+}
 
 /*
     Input of serial number for equipment
 */
-export const SERIAL = 'serial'
+export const SERIAL = {
+    input: true,
+    name: 'serial',
+}
 
 /*
     Switch if equipment has spreader
 */
-export const SPREADER = 'spreader'
+export const SPREADER = {
+    name: 'spreader',
+    switch: true,
+}
 
 /*
     Input of state
 */
-export const STATE = 'state'
+export const STATE = {
+    input: true,
+    name: 'state',
+}
 
 /*
     Select of subcategories based on category for equipment
     Options: Dynamic list from database based on category
 */
-export const SUBCATEGORY = 'subcategory'
+export const SUBCATEGORY = {
+    name: 'subcategory',
+    options: [],
+    select: true,
+}
 
 /*
     Switch if equipment has tag axle
 */
-export const TAG_AXLE = 'tagAxle'
+export const TAG_AXLE = {
+    name: 'tagAxle',
+    switch: true,
+}
 
 /*
     Switch if equipment has three point hitch
 */
-export const THREE_POINT_HITCH = 'threePointHitch'
+export const THREE_POINT_HITCH = {
+    name: 'threePointHitch',
+    switch: true,
+}
 
 /*
     Select of transmission for other equipment category
     Options: Automatic, Manual
 */
-export const TRANSMISSION = 'transmission'
+export const TRANSMISSION = {
+    name: 'transmission',
+    options: [
+        {
+            name: 'Automatic',
+            value: 0,
+        },
+        {
+            name: 'Manual',
+            value: 1,
+        },
+    ],
+    select: true,
+}
 
 /*
     Select of transmission type for tractor category
     Options: Powershift, Hydrostatic, Standard
 */
-export const TRANSMISSION_TYPE = 'transmissionType'
+export const TRANSMISSION_TYPE = {
+    name: 'transmissionType',
+    options: [
+        {
+            name: 'Powershift',
+            value: 0,
+        },
+        {
+            name: 'Hydrostatic',
+            value: 1,
+        },
+        {
+            name: 'Standard',
+            value: 2,
+        },
+    ],
+    select: true,
+}
 
 /*
     Input of width for equipment
 */
-export const WIDTH = 'width'
+export const WIDTH = {
+    input: true,
+    name: 'width',
+}
 
 /*
     Input of year for equipment
 */
-export const YEAR = 'year'
+export const YEAR = {
+    input: true,
+    name: 'year',
+}
 
 /*
     Input of zip code
 */
-export const ZIP_CODE = 'zipCode'
+export const ZIP_CODE = {
+    input: true,
+    name: 'zipCode',
+}

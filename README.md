@@ -25,7 +25,7 @@ npm i --save @tractorzoom/equipment-attributes
 
 #### `COMMON_ATTRIBUTES`
 
-Array list of common attribute strings across all equipment types. [See more](src/attributes-by-category.js)
+Array list of common [attribute objects](#attribute) across all equipment types. [See more](src/attributes-by-category.js)
 
 #### `EQUIPMENT_TYPES`
 
@@ -33,25 +33,35 @@ Object of values for each each equipment category. [See more](src/equipment-type
 
 #### `IDENTIFYING_ATTRIBUTES`
 
-Array list of identifying attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
+Array list of identifying [attribute objects](#attribute) common across all equipment types. [See more](src/attributes-by-category.js)
 
 #### `LOCATION_ATTRIBUTES`
 
-Array list of location attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
+Array list of location [attribute objects](#attribute) common across all equipment types. [See more](src/attributes-by-category.js)
 
 #### `VALUE_ATTRIBUTES`
 
-Array list of value attribute strings common across all equipment types. [See more](src/attributes-by-category.js)
+Array list of value [attribute objects](#attribute) common across all equipment types. [See more](src/attributes-by-category.js)
 
 #### `getAttributesForCategory`
 
-Function to get all equipment attributes for a given category. Returns an array list of attribute strings.
+Function to get all equipment attributes for a given category. Returns an array list of [attribute objects](#attribute).
 
 ```
 import {EQUIPMENT_TYPES, getAttributesForCategory} from '@tractorzoom/equipment-attributes'
 
 const attributesForCategory = getAttributesForCategory(EQUIPMENT_TYPES.HARVESTING)
 ```
+
+### Attribute
+
+| property | optional | description                                                                                 |
+| -------- | -------- | ------------------------------------------------------------------------------------------- |
+| input    | yes      | boolean that identifies attribute should be a input element                                 |
+| name     | no       | name of attribute, camel casing                                                             |
+| options  | yes      | array of options for select attributes, if empty, options should be populated from database |
+| select   | yes      | boolean that identifies attribute should be a select element                                |
+| switch   | yes      | boolean that identifies attribute should be a switch element                                |
 
 ## Contributing
 
