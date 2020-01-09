@@ -122,7 +122,7 @@ const TILLAGE = {
 const TRACTORS = {
     name: 'Tractors',
     subcategories: {
-        TRACTOR: '',
+        TRACTOR: 'tractor',
     },
 }
 
