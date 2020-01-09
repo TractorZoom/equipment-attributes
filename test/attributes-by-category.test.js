@@ -62,14 +62,14 @@ const DEFAULT_ATTRIBUTES = [
 ]
 
 test('attributes for ag trailers', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.AG_TRAILERS)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.AG_TRAILERS.name)
     const expectedAttributes = [...DEFAULT_ATTRIBUTES, LENGTH]
 
     expect(actual).toStrictEqual(expectedAttributes)
 })
 
 test('attributes for chemical applicators', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.CHEMICAL_APPLICATORS)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.CHEMICAL_APPLICATORS.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         CAPACITY,
@@ -85,7 +85,7 @@ test('attributes for chemical applicators', () => {
 })
 
 test('attributes for harvesting', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.HARVESTING)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.HARVESTING.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         CHOPPER,
@@ -106,21 +106,21 @@ test('attributes for harvesting', () => {
 })
 
 test('attributes for hay and forage', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.HAY_AND_FORAGE)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.HAY_AND_FORAGE.name)
     const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, NUMBER_OF_BALES, WIDTH]
 
     expect(actual).toStrictEqual(expectedAttributes)
 })
 
 test('attributes for manure handling', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.MANURE_HANDLING)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.MANURE_HANDLING.name)
     const expectedAttributes = [...DEFAULT_ATTRIBUTES, CAPACITY, DRIVE, HOURS, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH]
 
     expect(actual).toStrictEqual(expectedAttributes)
 })
 
 test('attributes for other equipment', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.OTHER_EQUIPMENT)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.OTHER_EQUIPMENT.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         CAPACITY,
@@ -137,7 +137,7 @@ test('attributes for other equipment', () => {
 })
 
 test('attributes for planting', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.PLANTING)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.PLANTING.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         ACRES,
@@ -153,7 +153,7 @@ test('attributes for planting', () => {
 })
 
 test('attributes for tillage', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.TILLAGE)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.TILLAGE.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         NUMBER_OF_BOTTOMS,
@@ -167,7 +167,7 @@ test('attributes for tillage', () => {
 })
 
 test('attributes for tractors', () => {
-    const actual = getAttributesForCategory(EQUIPMENT_TYPES.TRACTORS)
+    const actual = getAttributesForCategory(EQUIPMENT_TYPES.TRACTORS.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         BELLY_MOWER,
