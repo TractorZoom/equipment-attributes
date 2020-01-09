@@ -166,7 +166,7 @@ describe('Equipment Types and Subcategories', () => {
         const expectedTractors = {
             name: 'Tractors',
             subcategories: {
-                TRACTOR: '',
+                TRACTOR: 'tractor',
             },
         }
 
