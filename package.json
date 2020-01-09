@@ -14,7 +14,7 @@
     "engines": {
         "node": "10.x"
     },
-    "main": "src/index.js",
+    "main": "lib/index.js",
     "scripts": {
         "build": "./node_modules/.bin/babel src --out-dir lib --copy-files",
         "commit": "git-cz",

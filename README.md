@@ -29,9 +29,9 @@ npm i --save @tractorzoom/equipment-attributes
 
 Array list of common [attribute objects](#attribute) across all equipment types. [See more](src/attributes-by-category.js)
 
-#### `EQUIPMENT_TYPES`
+#### `CATEGORIES`
 
-Object of values for each each equipment category. [See more](src/equipment-types.js)
+Object with values for each equipment category and corresponding subcategories. [See more](src/categories.js)
 
 #### `IDENTIFYING_ATTRIBUTES`
 
@@ -50,9 +50,9 @@ Array list of value [attribute objects](#attribute) common across all equipment 
 Function to get all equipment attributes for a given category. Returns an array list of [attribute objects](#attribute).
 
 ```
-import {EQUIPMENT_TYPES, getAttributesForCategory} from '@tractorzoom/equipment-attributes'
+import {CATEGORIES, getAttributesForCategory} from '@tractorzoom/equipment-attributes'
 
-const attributesForCategory = getAttributesForCategory(EQUIPMENT_TYPES.HARVESTING)
+const attributesForCategory = getAttributesForCategory(CATEGORIES.HARVESTING)
 ```
 
 ### Attribute
