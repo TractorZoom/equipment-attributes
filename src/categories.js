@@ -126,7 +126,7 @@ const TRACTORS = {
     },
 }
 
-export const EQUIPMENT_TYPES = {
+export const CATEGORIES = {
     AG_TRAILERS,
     CHEMICAL_APPLICATORS,
     HARVESTING,

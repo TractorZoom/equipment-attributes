@@ -1,4 +1,4 @@
-import {EQUIPMENT_TYPES} from '../src/equipment-types'
+import {CATEGORIES} from '../src/categories'
 
 describe('Equipment Types and Subcategories', () => {
     test('AG_TRAILERS', () => {
@@ -12,7 +12,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.AG_TRAILERS).toStrictEqual(expectedAgTrailers)
+        expect(CATEGORIES.AG_TRAILERS).toStrictEqual(expectedAgTrailers)
     })
 
     test('CHEMICAL_APPLICATORS', () => {
@@ -31,7 +31,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.CHEMICAL_APPLICATORS).toStrictEqual(expectedChemicalApplicators)
+        expect(CATEGORIES.CHEMICAL_APPLICATORS).toStrictEqual(expectedChemicalApplicators)
     })
 
     test('HARVESTING', () => {
@@ -55,7 +55,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.HARVESTING).toStrictEqual(expectedHarvesting)
+        expect(CATEGORIES.HARVESTING).toStrictEqual(expectedHarvesting)
     })
 
     test('HAY_AND_FORAGE', () => {
@@ -79,7 +79,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.HAY_AND_FORAGE).toStrictEqual(expectedHayAndForage)
+        expect(CATEGORIES.HAY_AND_FORAGE).toStrictEqual(expectedHayAndForage)
     })
 
     test('MANURE_HANDLING', () => {
@@ -94,7 +94,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.MANURE_HANDLING).toStrictEqual(expectedManureHandling)
+        expect(CATEGORIES.MANURE_HANDLING).toStrictEqual(expectedManureHandling)
     })
 
     test('OTHER_EQUIPMENT', () => {
@@ -121,7 +121,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.OTHER_EQUIPMENT).toStrictEqual(expectedOtherEquipment)
+        expect(CATEGORIES.OTHER_EQUIPMENT).toStrictEqual(expectedOtherEquipment)
     })
 
     test('PLANTING', () => {
@@ -136,7 +136,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.PLANTING).toStrictEqual(expectedPlanting)
+        expect(CATEGORIES.PLANTING).toStrictEqual(expectedPlanting)
     })
 
     test('TILLAGE', () => {
@@ -159,7 +159,7 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.TILLAGE).toStrictEqual(expectedTillage)
+        expect(CATEGORIES.TILLAGE).toStrictEqual(expectedTillage)
     })
 
     test('TRACTORS', () => {
@@ -170,6 +170,6 @@ describe('Equipment Types and Subcategories', () => {
             },
         }
 
-        expect(EQUIPMENT_TYPES.TRACTORS).toStrictEqual(expectedTractors)
+        expect(CATEGORIES.TRACTORS).toStrictEqual(expectedTractors)
     })
 })
