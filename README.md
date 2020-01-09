@@ -31,7 +31,7 @@ Array list of common [attribute objects](#attribute) across all equipment types.
 
 #### `CATEGORIES`
 
-Object of values for each equipment category and corresponding subcategories. [See more](src/categories.js)
+Object with values for each equipment category and corresponding subcategories. [See more](src/categories.js)
 
 #### `IDENTIFYING_ATTRIBUTES`
 
