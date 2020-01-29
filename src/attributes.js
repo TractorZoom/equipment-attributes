@@ -112,7 +112,32 @@ export const DESCRIPTION = {
 */
 export const DRIVE = {
     name: 'drive',
-    options: [],
+    options: [
+        {
+            name: '2WD',
+            value: 1,
+        },
+        {
+            name: 'MFWD',
+            value: 2,
+        },
+        {
+            name: '4WD',
+            value: 3,
+        },
+        {
+            name: 'Tracks',
+            value: 4,
+        },
+        {
+            name: 'RWA',
+            value: 5,
+        },
+        {
+            name: 'PRWD',
+            value: 6,
+        },
+    ],
     select: true,
 }
 
