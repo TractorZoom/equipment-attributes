@@ -72,10 +72,10 @@ test('attributes for chemical applicators', () => {
     const actual = getAttributesForCategory(CATEGORIES.CHEMICAL_APPLICATORS.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
+        HOURS,
         CAPACITY,
         DRIVE,
         EMISSIONS,
-        HOURS,
         HORSEPOWER,
         NUMBER_OF_SHANKS,
         WIDTH,
@@ -88,11 +88,11 @@ test('attributes for harvesting', () => {
     const actual = getAttributesForCategory(CATEGORIES.HARVESTING.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
+        HOURS,
         CHOPPER,
         DRIVE,
         EMISSIONS,
         FRONT_TIRES,
-        HOURS,
         HORSEPOWER,
         NUMBER_OF_ROWS,
         POWERFOLD_BIN,
@@ -107,14 +107,14 @@ test('attributes for harvesting', () => {
 
 test('attributes for hay and forage', () => {
     const actual = getAttributesForCategory(CATEGORIES.HAY_AND_FORAGE.name)
-    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, NUMBER_OF_BALES, WIDTH]
+    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, ACRES, NUMBER_OF_BALES, WIDTH]
 
     expect(actual).toStrictEqual(expectedAttributes)
 })
 
 test('attributes for manure handling', () => {
     const actual = getAttributesForCategory(CATEGORIES.MANURE_HANDLING.name)
-    const expectedAttributes = [...DEFAULT_ATTRIBUTES, CAPACITY, DRIVE, HOURS, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH]
+    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, CAPACITY, DRIVE, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH]
 
     expect(actual).toStrictEqual(expectedAttributes)
 })
@@ -123,9 +123,9 @@ test('attributes for other equipment', () => {
     const actual = getAttributesForCategory(CATEGORIES.OTHER_EQUIPMENT.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
+        HOURS,
         CAPACITY,
         EMISSIONS,
-        HOURS,
         LENGTH,
         MILES,
         TAG_AXLE,
@@ -140,9 +140,9 @@ test('attributes for planting', () => {
     const actual = getAttributesForCategory(CATEGORIES.PLANTING.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
+        HOURS,
         ACRES,
         CENTER_BULK_FILL,
-        HOURS,
         NUMBER_OF_ROWS,
         ROW_CLEANERS,
         ROW_SPACING,
@@ -170,15 +170,15 @@ test('attributes for tractors', () => {
     const actual = getAttributesForCategory(CATEGORIES.TRACTORS.name)
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
+        HOURS,
         BELLY_MOWER,
         CAB,
         DRIVE,
         EMISSIONS,
-        FRONT_TIRES,
-        HOURS,
         HORSEPOWER,
         LOADER,
         REAR_PTO,
+        FRONT_TIRES,
         REAR_TIRES,
         THREE_POINT_HITCH,
     ]
