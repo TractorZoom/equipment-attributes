@@ -1,3 +1,5 @@
+const categories = require('./categories')
+
 /* 
     Input of number of acres worked
 */
@@ -51,7 +53,7 @@ export const CAPACITY = {
 */
 export const CATEGORY = {
     name: 'category',
-    options: [],
+    options: categories.CATEGORY_LIST,
     select: true,
 }
 

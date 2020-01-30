@@ -137,3 +137,5 @@ export const CATEGORIES = {
     TILLAGE,
     TRACTORS,
 }
+
+export const CATEGORY_LIST = Object.keys(CATEGORIES).map(category => CATEGORIES[category].name)
