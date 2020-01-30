@@ -8,4 +8,5 @@ module.exports = {
     LOCATION_ATTRIBUTES: attributesByCategory.LOCATION_ATTRIBUTES,
     VALUE_ATTRIBUTES: attributesByCategory.VALUE_ATTRIBUTES,
     getAttributesForCategory: attributesByCategory.getAttributesForCategory,
+    getSubcategoriesForCategory: categories.getSubcategoriesForCategory,
 }

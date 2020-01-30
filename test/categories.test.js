@@ -1,4 +1,7 @@
-import {CATEGORIES} from '../src/categories'
+import {CATEGORIES, CATEGORY_LIST, getSubcategoriesForCategory} from '../src/categories'
+import Chance from 'chance'
+
+const chance = new Chance()
 
 describe('Equipment Types and Subcategories', () => {
     test('AG_TRAILERS', () => {
@@ -166,10 +169,28 @@ describe('Equipment Types and Subcategories', () => {
         const expectedTractors = {
             name: 'Tractors',
             subcategories: {
-                TRACTOR: 'tractor',
+                FULL_SIZE: 'Full-Size',
+                UTILITY: 'Utility',
             },
         }
 
         expect(CATEGORIES.TRACTORS).toStrictEqual(expectedTractors)
+    })
+
+    test('should have list of category names', () => {
+        const expectedCategoryList = Object.keys(CATEGORIES).map(category => CATEGORIES[category].name)
+
+        expect(CATEGORY_LIST).toStrictEqual(expectedCategoryList)
+    })
+
+    test('should have a list of subcategories for category', () => {
+        const expectedCategory = chance.pickone(Object.keys(CATEGORIES))
+        const expectedCategoryName = CATEGORIES[expectedCategory].name
+        const expectedSubcategories = Object.keys(CATEGORIES[expectedCategory].subcategories).map(
+            subcategory => CATEGORIES[expectedCategory].subcategories[subcategory]
+        )
+        const actual = getSubcategoriesForCategory(expectedCategoryName)
+
+        expect(actual).toStrictEqual(expectedSubcategories)
     })
 })

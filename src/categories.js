@@ -122,7 +122,8 @@ const TILLAGE = {
 const TRACTORS = {
     name: 'Tractors',
     subcategories: {
-        TRACTOR: 'tractor',
+        FULL_SIZE: 'Full-Size',
+        UTILITY: 'Utility',
     },
 }
 
@@ -139,3 +140,11 @@ export const CATEGORIES = {
 }
 
 export const CATEGORY_LIST = Object.keys(CATEGORIES).map(category => CATEGORIES[category].name)
+
+export const getSubcategoriesForCategory = categoryName => {
+    const categoryKey = Object.keys(CATEGORIES).find(key => CATEGORIES[key].name === categoryName)
+
+    return Object.keys(CATEGORIES[categoryKey].subcategories).map(
+        subcategory => CATEGORIES[categoryKey].subcategories[subcategory]
+    )
+}
