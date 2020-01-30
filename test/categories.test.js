@@ -178,7 +178,7 @@ describe('Equipment Types and Subcategories', () => {
     })
 
     test('should have list of category names', () => {
-        const expectedCategoryList = Object.keys(CATEGORIES).map(category => CATEGORIES[category].name)
+        const expectedCategoryList = Object.values(CATEGORIES)
 
         expect(CATEGORY_LIST).toStrictEqual(expectedCategoryList)
     })

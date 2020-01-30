@@ -139,7 +139,7 @@ export const CATEGORIES = {
     TRACTORS,
 }
 
-export const CATEGORY_LIST = Object.keys(CATEGORIES).map(category => CATEGORIES[category].name)
+export const CATEGORY_LIST = Object.values(CATEGORIES)
 
 export const getSubcategoriesForCategory = categoryName => {
     const categoryKey = Object.keys(CATEGORIES).find(key => CATEGORIES[key].name === categoryName)
