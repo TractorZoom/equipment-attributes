@@ -169,8 +169,11 @@ describe('Equipment Types and Subcategories', () => {
         const expectedTractors = {
             name: 'Tractors',
             subcategories: {
-                FULL_SIZE: 'Full-Size',
-                UTILITY: 'Utility',
+                LESS_THAN_40: 'Less than 40 HP',
+                '40_TO_99': '40 to 99 HP',
+                '100_TO_174': '100 to 174 HP',
+                '175_TO_299': '175 to 299 HP',
+                '300_PLUS': '300 or more HP',
             },
         }
 
