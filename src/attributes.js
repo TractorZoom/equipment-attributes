@@ -87,6 +87,7 @@ export const CHOPPER = {
 */
 export const CONDITION = {
     name: 'condition',
+    default: 'Used',
     options: [
         {
             name: 'New',
