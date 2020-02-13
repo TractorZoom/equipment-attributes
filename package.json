@@ -1,6 +1,6 @@
 {
     "name": "@tractorzoom/equipment-attributes",
-    "version": "3.5.0",
+    "version": "3.5.1",
     "description": "Source of truth for equipment attributes by category",
     "author": "Tractor Zoom",
     "license": "ISC",
