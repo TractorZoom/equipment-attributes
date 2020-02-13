@@ -110,6 +110,7 @@ describe('Equipment Types and Subcategories', () => {
                 FUEL_TRAILERS: 'Fuel Trailers',
                 GPS_EQUIPMENT: 'GPS Equipment',
                 GENERATORS: 'Generators',
+                IRRIGATION: 'Irrigation',
                 LIFTS: 'Lifts',
                 LOADERS: 'Loaders',
                 LIQUID_TANKS: 'Liquid Tanks',
