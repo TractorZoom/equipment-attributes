@@ -186,6 +186,10 @@ export const FRONT_TIRES = {
             name: 'Duals',
             value: 1,
         },
+        {
+            name: 'Triples',
+            value: 2,
+        },
     ],
     select: true,
 }
@@ -339,6 +343,10 @@ export const REAR_TIRES = {
         {
             name: 'Duals',
             value: 1,
+        },
+        {
+            name: 'Triples',
+            value: 2,
         },
     ],
     select: true,
