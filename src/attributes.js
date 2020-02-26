@@ -47,7 +47,6 @@ export const CAPACITY = {
     input: true,
     name: 'capacity',
     unitOptions: [units.GALLONS, units.TONS],
-    defaultUnit: units.GALLONS,
 }
 
 /*
@@ -220,7 +219,6 @@ export const LENGTH = {
     input: true,
     name: 'length',
     unitOptions: [units.FEET, units.INCHES],
-    defaultUnit: units.FEET,
 }
 
 /*
@@ -480,7 +478,6 @@ export const WIDTH = {
     input: true,
     name: 'width',
     unitOptions: [units.FEET, units.INCHES],
-    defaultUnit: units.FEET,
 }
 
 /*
