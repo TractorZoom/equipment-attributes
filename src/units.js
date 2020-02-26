@@ -1,5 +1,5 @@
 // capacity
-export const GALLONS = 'g'
+export const GALLONS = 'gal'
 export const TONS = 'T'
 
 // distance
