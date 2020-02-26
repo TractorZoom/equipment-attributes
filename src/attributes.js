@@ -1,4 +1,5 @@
 const categories = require('./categories')
+const units = require('./units')
 
 /* 
     Input of number of acres worked
@@ -45,6 +46,8 @@ export const CAB = {
 export const CAPACITY = {
     input: true,
     name: 'capacity',
+    unitOptions: [units.GALLONS, units.TONS],
+    defaultUnit: units.GALLONS,
 }
 
 /*
@@ -216,6 +219,8 @@ export const HORSEPOWER = {
 export const LENGTH = {
     input: true,
     name: 'length',
+    unitOptions: [units.FEET, units.INCHES],
+    defaultUnit: units.FEET,
 }
 
 /*
@@ -474,6 +479,8 @@ export const TRANSMISSION_TYPE = {
 export const WIDTH = {
     input: true,
     name: 'width',
+    unitOptions: [units.FEET, units.INCHES],
+    defaultUnit: units.FEET,
 }
 
 /*
