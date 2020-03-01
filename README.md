@@ -57,13 +57,15 @@ const attributesForCategory = getAttributesForCategory(CATEGORIES.HARVESTING)
 
 ### Attribute
 
-| property | optional | description                                                                                 |
-| -------- | -------- | ------------------------------------------------------------------------------------------- |
-| input    | yes      | boolean that identifies attribute should be a input element                                 |
-| name     | no       | name of attribute, camel casing                                                             |
-| options  | yes      | array of options for select attributes, if empty, options should be populated from database |
-| select   | yes      | boolean that identifies attribute should be a select element                                |
-| switch   | yes      | boolean that identifies attribute should be a switch element                                |
+| property    | required                 | description                                                                                 |
+| ----------- | ------------------------ | ------------------------------------------------------------------------------------------- |
+| input       | no                       | boolean that identifies attribute should be a input element                                 |
+| inputType   | yes when `input` is true | string that describes html type for input                                                   |
+| name        | yes                      | name of attribute, camel casing                                                             |
+| options     | no                       | array of options for select attributes, if empty, options should be populated from database |
+| select      | no                       | boolean that identifies attribute should be a select element                                |
+| switch      | no                       | boolean that identifies attribute should be a switch element                                |
+| unitOptions | no                       | array of unit string options for attribute                                                  |
 
 ## Contributing
 
