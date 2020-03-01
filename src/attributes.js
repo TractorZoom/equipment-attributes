@@ -6,7 +6,7 @@ const units = require('./units')
 */
 export const ACRES = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'acres',
 }
 
@@ -46,7 +46,7 @@ export const CAB = {
 */
 export const CAPACITY = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'capacity',
     unitOptions: [units.GALLONS, units.TONS],
 }
@@ -74,7 +74,7 @@ export const CENTER_BULK_FILL = {
 */
 export const CITY = {
     input: true,
-    type: 'string',
+    inputType: 'string',
     name: 'city',
 }
 
@@ -111,7 +111,7 @@ export const CONDITION = {
 */
 export const DESCRIPTION = {
     input: true,
-    type: 'string',
+    inputType: 'string',
     name: 'description',
 }
 
@@ -205,7 +205,7 @@ export const FRONT_TIRES = {
 */
 export const HOURS = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'hours',
 }
 
@@ -214,7 +214,7 @@ export const HOURS = {
 */
 export const HORSEPOWER = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'horsepower',
 }
 
@@ -223,7 +223,7 @@ export const HORSEPOWER = {
 */
 export const LENGTH = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'length',
     unitOptions: [units.FEET, units.INCHES],
 }
@@ -241,7 +241,7 @@ export const LOADER = {
 */
 export const LOT_NUMBER = {
     input: true,
-    type: 'string',
+    inputType: 'string',
     name: 'lotNumber',
 }
 
@@ -260,7 +260,7 @@ export const MAKE = {
 */
 export const MILES = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'miles',
 }
 
@@ -279,7 +279,7 @@ export const MODEL = {
 */
 export const NUMBER_OF_BALES = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'numberOfBales',
 }
 
@@ -288,7 +288,7 @@ export const NUMBER_OF_BALES = {
 */
 export const NUMBER_OF_BOTTOMS = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'numberOfBottoms',
 }
 
@@ -297,7 +297,7 @@ export const NUMBER_OF_BOTTOMS = {
 */
 export const NUMBER_OF_ROWS = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'numberOfRows',
 }
 
@@ -306,7 +306,7 @@ export const NUMBER_OF_ROWS = {
 */
 export const NUMBER_OF_SHANKS = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'numberOfShanks',
 }
 
@@ -315,7 +315,7 @@ export const NUMBER_OF_SHANKS = {
 */
 export const PRICE = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'price',
 }
 
@@ -382,7 +382,7 @@ export const ROW_CLEANERS = {
 */
 export const ROW_SPACING = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'rowSpacing',
 }
 
@@ -391,7 +391,7 @@ export const ROW_SPACING = {
 */
 export const SEPARATOR_HOURS = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'separatorHours',
 }
 
@@ -400,7 +400,7 @@ export const SEPARATOR_HOURS = {
 */
 export const SERIAL = {
     input: true,
-    type: 'string',
+    inputType: 'string',
     name: 'serial',
 }
 
@@ -417,7 +417,7 @@ export const SPREADER = {
 */
 export const STATE = {
     input: true,
-    type: 'string',
+    inputType: 'string',
     name: 'state',
 }
 
@@ -494,7 +494,7 @@ export const TRANSMISSION_TYPE = {
 */
 export const WIDTH = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'width',
     unitOptions: [units.FEET, units.INCHES],
 }
@@ -504,7 +504,7 @@ export const WIDTH = {
 */
 export const YEAR = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'year',
 }
 
@@ -513,6 +513,6 @@ export const YEAR = {
 */
 export const ZIP_CODE = {
     input: true,
-    type: 'number',
+    inputType: 'number',
     name: 'zipCode',
 }
