@@ -26,6 +26,7 @@ describe('Equipment Types and Subcategories', () => {
                 FERTILIZER_APPLICATORS_DRY: 'Fertilizer Applicators - Dry',
                 FERTILIZER_APPLICATORS_LIQUID: 'Fertilizer Applicators - Liquid',
                 FLOATERS: 'Floaters',
+                NH3_ANHYDROUS_TANKS: 'NH3/Anhydrous Tanks',
                 SPRAYERS_PULL_TYPE: 'Sprayers - Pull Type',
                 SPRAYERS_SELF_PROPELLED: 'Sprayers - Self Propelled',
                 SPRAYERS_3PT_MOUNTED: 'Sprayers - 3pt Mounted',
@@ -135,6 +136,7 @@ describe('Equipment Types and Subcategories', () => {
                 AIR_SEEDERS_OR_CARTS: 'Air Seeders or Carts',
                 GRAIN_DRILLS: 'Grain Drills',
                 PLANTERS: 'Planters',
+                SEEDERS: 'Seeders',
                 SEED_TENDERS: 'Seed Tenders',
                 OTHER: 'Other',
             },
@@ -191,7 +193,7 @@ describe('Equipment Types and Subcategories', () => {
         const expectedCategory = chance.pickone(Object.keys(CATEGORIES))
         const expectedCategoryName = CATEGORIES[expectedCategory].name
         const expectedSubcategories = Object.keys(CATEGORIES[expectedCategory].subcategories).map(
-            subcategory => CATEGORIES[expectedCategory].subcategories[subcategory]
+            (subcategory) => CATEGORIES[expectedCategory].subcategories[subcategory]
         )
         const actual = getSubcategoriesForCategory(expectedCategoryName)
 
