@@ -70,16 +70,7 @@ test('attributes for ag trailers', () => {
 
 test('attributes for chemical applicators', () => {
     const actual = getAttributesForCategory(CATEGORIES.CHEMICAL_APPLICATORS.name)
-    const expectedAttributes = [
-        ...DEFAULT_ATTRIBUTES,
-        HOURS,
-        CAPACITY,
-        DRIVE,
-        EMISSIONS,
-        HORSEPOWER,
-        NUMBER_OF_SHANKS,
-        WIDTH,
-    ]
+    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, CAPACITY, DRIVE, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH]
 
     expect(actual).toStrictEqual(expectedAttributes)
 })
@@ -91,7 +82,6 @@ test('attributes for harvesting', () => {
         HOURS,
         CHOPPER,
         DRIVE,
-        EMISSIONS,
         FRONT_TIRES,
         HORSEPOWER,
         NUMBER_OF_ROWS,
@@ -174,7 +164,6 @@ test('attributes for tractors', () => {
         BELLY_MOWER,
         CAB,
         DRIVE,
-        EMISSIONS,
         HORSEPOWER,
         LOADER,
         REAR_PTO,

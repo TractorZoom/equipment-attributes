@@ -61,12 +61,11 @@ export const COMMON_ATTRIBUTES = [
 
 const ATTRIBUTES_BY_CATEGORY = {
     [CATEGORIES.AG_TRAILERS.name]: [LENGTH],
-    [CATEGORIES.CHEMICAL_APPLICATORS.name]: [HOURS, CAPACITY, DRIVE, EMISSIONS, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH],
+    [CATEGORIES.CHEMICAL_APPLICATORS.name]: [HOURS, CAPACITY, DRIVE, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH],
     [CATEGORIES.HARVESTING.name]: [
         HOURS,
         CHOPPER,
         DRIVE,
-        EMISSIONS,
         FRONT_TIRES,
         HORSEPOWER,
         NUMBER_OF_ROWS,
@@ -86,7 +85,6 @@ const ATTRIBUTES_BY_CATEGORY = {
         BELLY_MOWER,
         CAB,
         DRIVE,
-        EMISSIONS,
         HORSEPOWER,
         LOADER,
         REAR_PTO,
@@ -96,6 +94,6 @@ const ATTRIBUTES_BY_CATEGORY = {
     ],
 }
 
-export const getAttributesForCategory = categoryName => {
+export const getAttributesForCategory = (categoryName) => {
     return [...COMMON_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]]
 }
