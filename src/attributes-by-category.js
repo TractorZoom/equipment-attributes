@@ -66,7 +66,6 @@ const ATTRIBUTES_BY_CATEGORY = {
         HOURS,
         CHOPPER,
         DRIVE,
-        EMISSIONS,
         FRONT_TIRES,
         HORSEPOWER,
         NUMBER_OF_ROWS,
@@ -96,6 +95,6 @@ const ATTRIBUTES_BY_CATEGORY = {
     ],
 }
 
-export const getAttributesForCategory = categoryName => {
+export const getAttributesForCategory = (categoryName) => {
     return [...COMMON_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]]
 }

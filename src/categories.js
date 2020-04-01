@@ -14,6 +14,7 @@ const CHEMICAL_APPLICATORS = {
         FERTILIZER_APPLICATORS_DRY: 'Fertilizer Applicators - Dry',
         FERTILIZER_APPLICATORS_LIQUID: 'Fertilizer Applicators - Liquid',
         FLOATERS: 'Floaters',
+        NH3_ANHYDROUS_TANKS: 'NH3/Anhydrous Tanks',
         SPRAYERS_PULL_TYPE: 'Sprayers - Pull Type',
         SPRAYERS_SELF_PROPELLED: 'Sprayers - Self Propelled',
         SPRAYERS_3PT_MOUNTED: 'Sprayers - 3pt Mounted',
@@ -98,6 +99,7 @@ const PLANTING = {
         AIR_SEEDERS_OR_CARTS: 'Air Seeders or Carts',
         GRAIN_DRILLS: 'Grain Drills',
         PLANTERS: 'Planters',
+        SEEDERS: 'Seeders',
         SEED_TENDERS: 'Seed Tenders',
         OTHER: 'Other',
     },
@@ -145,10 +147,10 @@ export const CATEGORIES = {
 
 export const CATEGORY_LIST = Object.values(CATEGORIES)
 
-export const getSubcategoriesForCategory = categoryName => {
-    const categoryKey = Object.keys(CATEGORIES).find(key => CATEGORIES[key].name === categoryName)
+export const getSubcategoriesForCategory = (categoryName) => {
+    const categoryKey = Object.keys(CATEGORIES).find((key) => CATEGORIES[key].name === categoryName)
 
     return Object.keys(CATEGORIES[categoryKey].subcategories).map(
-        subcategory => CATEGORIES[categoryKey].subcategories[subcategory]
+        (subcategory) => CATEGORIES[categoryKey].subcategories[subcategory]
     )
 }
