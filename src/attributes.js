@@ -30,12 +30,8 @@ export const CAB = {
             value: 0,
         },
         {
-            name: 'Deluxe',
+            name: 'Premium',
             value: 1,
-        },
-        {
-            name: 'Buddy Seat',
-            value: 2,
         },
     ],
     select: true,
