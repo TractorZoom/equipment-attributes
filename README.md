@@ -86,4 +86,3 @@ More info on our standards related to [JavaScript Testing](https://github.com/Tr
 ### Committing
 
 Info on our standards related to [commits](https://github.com/TractorZoom/Day1/blob/master/developer/languages/javascript.md#committing) can be found in our [Day 1 repo](https://github.com/TractorZoom/Day1)
-
