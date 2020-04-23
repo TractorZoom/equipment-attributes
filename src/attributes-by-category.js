@@ -67,7 +67,6 @@ const ATTRIBUTES_BY_CATEGORY = {
         CHOPPER,
         DRIVE,
         FRONT_TIRES,
-        HORSEPOWER,
         NUMBER_OF_ROWS,
         POWERFOLD_BIN,
         ROW_SPACING,
