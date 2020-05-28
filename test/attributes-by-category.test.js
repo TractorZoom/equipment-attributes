@@ -41,9 +41,9 @@ import {
     WIDTH,
     YEAR,
     ZIP_CODE,
-} from '../src/attributes'
-import {getAttributesForCategory} from '../src/attributes-by-category'
-import {CATEGORIES} from '../src/categories'
+} from '../src/attributes';
+import { getAttributesForCategory } from '../src/attributes-by-category';
+import { CATEGORIES } from '../src/categories';
 
 const DEFAULT_ATTRIBUTES = [
     YEAR,
@@ -59,24 +59,24 @@ const DEFAULT_ATTRIBUTES = [
     CONDITION,
     DESCRIPTION,
     SERIAL,
-]
+];
 
 test('attributes for ag trailers', () => {
-    const actual = getAttributesForCategory(CATEGORIES.AG_TRAILERS.name)
-    const expectedAttributes = [...DEFAULT_ATTRIBUTES, LENGTH]
+    const actual = getAttributesForCategory(CATEGORIES.AG_TRAILERS.name);
+    const expectedAttributes = [...DEFAULT_ATTRIBUTES, LENGTH];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for chemical applicators', () => {
-    const actual = getAttributesForCategory(CATEGORIES.CHEMICAL_APPLICATORS.name)
-    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, CAPACITY, DRIVE, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH]
+    const actual = getAttributesForCategory(CATEGORIES.CHEMICAL_APPLICATORS.name);
+    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, CAPACITY, DRIVE, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for harvesting', () => {
-    const actual = getAttributesForCategory(CATEGORIES.HARVESTING.name)
+    const actual = getAttributesForCategory(CATEGORIES.HARVESTING.name);
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         HOURS,
@@ -89,27 +89,27 @@ test('attributes for harvesting', () => {
         SEPARATOR_HOURS,
         SPREADER,
         WIDTH,
-    ]
+    ];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for hay and forage', () => {
-    const actual = getAttributesForCategory(CATEGORIES.HAY_AND_FORAGE.name)
-    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, ACRES, NUMBER_OF_BALES, WIDTH]
+    const actual = getAttributesForCategory(CATEGORIES.HAY_AND_FORAGE.name);
+    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, ACRES, NUMBER_OF_BALES, WIDTH];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for manure handling', () => {
-    const actual = getAttributesForCategory(CATEGORIES.MANURE_HANDLING.name)
-    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, CAPACITY, DRIVE, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH]
+    const actual = getAttributesForCategory(CATEGORIES.MANURE_HANDLING.name);
+    const expectedAttributes = [...DEFAULT_ATTRIBUTES, HOURS, CAPACITY, DRIVE, HORSEPOWER, NUMBER_OF_SHANKS, WIDTH];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for other equipment', () => {
-    const actual = getAttributesForCategory(CATEGORIES.OTHER_EQUIPMENT.name)
+    const actual = getAttributesForCategory(CATEGORIES.OTHER_EQUIPMENT.name);
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         HOURS,
@@ -120,13 +120,13 @@ test('attributes for other equipment', () => {
         TAG_AXLE,
         TRANSMISSION,
         WIDTH,
-    ]
+    ];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for planting', () => {
-    const actual = getAttributesForCategory(CATEGORIES.PLANTING.name)
+    const actual = getAttributesForCategory(CATEGORIES.PLANTING.name);
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         HOURS,
@@ -136,13 +136,13 @@ test('attributes for planting', () => {
         ROW_CLEANERS,
         ROW_SPACING,
         WIDTH,
-    ]
+    ];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for tillage', () => {
-    const actual = getAttributesForCategory(CATEGORIES.TILLAGE.name)
+    const actual = getAttributesForCategory(CATEGORIES.TILLAGE.name);
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         NUMBER_OF_BOTTOMS,
@@ -150,13 +150,13 @@ test('attributes for tillage', () => {
         NUMBER_OF_SHANKS,
         ROW_SPACING,
         WIDTH,
-    ]
+    ];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});
 
 test('attributes for tractors', () => {
-    const actual = getAttributesForCategory(CATEGORIES.TRACTORS.name)
+    const actual = getAttributesForCategory(CATEGORIES.TRACTORS.name);
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         HOURS,
@@ -169,7 +169,7 @@ test('attributes for tractors', () => {
         FRONT_TIRES,
         REAR_TIRES,
         THREE_POINT_HITCH,
-    ]
+    ];
 
-    expect(actual).toStrictEqual(expectedAttributes)
-})
+    expect(actual).toStrictEqual(expectedAttributes);
+});

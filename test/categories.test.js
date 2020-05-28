@@ -1,7 +1,7 @@
-import {CATEGORIES, CATEGORY_LIST, getSubcategoriesForCategory} from '../src/categories'
-import Chance from 'chance'
+import { CATEGORIES, CATEGORY_LIST, getSubcategoriesForCategory } from '../src/categories';
+import Chance from 'chance';
 
-const chance = new Chance()
+const chance = new Chance();
 
 describe('Equipment Types and Subcategories', () => {
     test('AG_TRAILERS', () => {
@@ -13,10 +13,10 @@ describe('Equipment Types and Subcategories', () => {
                 HEADER_TRAILERS: 'Header Trailers',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.AG_TRAILERS).toStrictEqual(expectedAgTrailers)
-    })
+        expect(CATEGORIES.AG_TRAILERS).toStrictEqual(expectedAgTrailers);
+    });
 
     test('CHEMICAL_APPLICATORS', () => {
         const expectedChemicalApplicators = {
@@ -33,10 +33,10 @@ describe('Equipment Types and Subcategories', () => {
                 TOOLBARS: 'Toolbars',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.CHEMICAL_APPLICATORS).toStrictEqual(expectedChemicalApplicators)
-    })
+        expect(CATEGORIES.CHEMICAL_APPLICATORS).toStrictEqual(expectedChemicalApplicators);
+    });
 
     test('HARVESTING', () => {
         const expectedHarvesting = {
@@ -57,10 +57,10 @@ describe('Equipment Types and Subcategories', () => {
                 HEADERS_ROW_CROP: 'Headers - Row Crop',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.HARVESTING).toStrictEqual(expectedHarvesting)
-    })
+        expect(CATEGORIES.HARVESTING).toStrictEqual(expectedHarvesting);
+    });
 
     test('HAY_AND_FORAGE', () => {
         const expectedHayAndForage = {
@@ -81,10 +81,10 @@ describe('Equipment Types and Subcategories', () => {
                 WINDROWERS: 'Windrowers',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.HAY_AND_FORAGE).toStrictEqual(expectedHayAndForage)
-    })
+        expect(CATEGORIES.HAY_AND_FORAGE).toStrictEqual(expectedHayAndForage);
+    });
 
     test('MANURE_HANDLING', () => {
         const expectedManureHandling = {
@@ -96,10 +96,10 @@ describe('Equipment Types and Subcategories', () => {
                 POULTRY_LITTER_EQUIPMENT: 'Poultry Litter Equipment',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.MANURE_HANDLING).toStrictEqual(expectedManureHandling)
-    })
+        expect(CATEGORIES.MANURE_HANDLING).toStrictEqual(expectedManureHandling);
+    });
 
     test('OTHER_EQUIPMENT', () => {
         const expectedOtherEquipment = {
@@ -124,10 +124,10 @@ describe('Equipment Types and Subcategories', () => {
                 VEHICLES: 'Vehicles',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.OTHER_EQUIPMENT).toStrictEqual(expectedOtherEquipment)
-    })
+        expect(CATEGORIES.OTHER_EQUIPMENT).toStrictEqual(expectedOtherEquipment);
+    });
 
     test('PLANTING', () => {
         const expectedPlanting = {
@@ -140,10 +140,10 @@ describe('Equipment Types and Subcategories', () => {
                 SEED_TENDERS: 'Seed Tenders',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.PLANTING).toStrictEqual(expectedPlanting)
-    })
+        expect(CATEGORIES.PLANTING).toStrictEqual(expectedPlanting);
+    });
 
     test('TILLAGE', () => {
         const expectedTillage = {
@@ -163,10 +163,10 @@ describe('Equipment Types and Subcategories', () => {
                 VERTICAL_TILLAGE: 'Vertical Tillage',
                 OTHER: 'Other',
             },
-        }
+        };
 
-        expect(CATEGORIES.TILLAGE).toStrictEqual(expectedTillage)
-    })
+        expect(CATEGORIES.TILLAGE).toStrictEqual(expectedTillage);
+    });
 
     test('TRACTORS', () => {
         const expectedTractors = {
@@ -178,25 +178,25 @@ describe('Equipment Types and Subcategories', () => {
                 '175_TO_299': '175 to 299 HP',
                 '300_PLUS': '300 or more HP',
             },
-        }
+        };
 
-        expect(CATEGORIES.TRACTORS).toStrictEqual(expectedTractors)
-    })
+        expect(CATEGORIES.TRACTORS).toStrictEqual(expectedTractors);
+    });
 
     test('should have list of category names', () => {
-        const expectedCategoryList = Object.values(CATEGORIES)
+        const expectedCategoryList = Object.values(CATEGORIES);
 
-        expect(CATEGORY_LIST).toStrictEqual(expectedCategoryList)
-    })
+        expect(CATEGORY_LIST).toStrictEqual(expectedCategoryList);
+    });
 
     test('should have a list of subcategories for category', () => {
-        const expectedCategory = chance.pickone(Object.keys(CATEGORIES))
-        const expectedCategoryName = CATEGORIES[expectedCategory].name
+        const expectedCategory = chance.pickone(Object.keys(CATEGORIES));
+        const expectedCategoryName = CATEGORIES[expectedCategory].name;
         const expectedSubcategories = Object.keys(CATEGORIES[expectedCategory].subcategories).map(
             (subcategory) => CATEGORIES[expectedCategory].subcategories[subcategory]
-        )
-        const actual = getSubcategoriesForCategory(expectedCategoryName)
+        );
+        const actual = getSubcategoriesForCategory(expectedCategoryName);
 
-        expect(actual).toStrictEqual(expectedSubcategories)
-    })
-})
+        expect(actual).toStrictEqual(expectedSubcategories);
+    });
+});
