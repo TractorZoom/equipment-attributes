@@ -2,9 +2,9 @@
 
 Source of truth for equipment attributes by category
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest) [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-[![Publish Status](https://github.com/TractorZoom/equipment-attributes/workflows/publish/badge.svg)](https://github.com/TractorZoom/equipment-attributes/actions) [![PR Verify Status](https://github.com/TractorZoom/equipment-attributes/workflows/pull_request_verify/badge.svg)](https://github.com/TractorZoom/equipment-attributes/actions)
+[![Publish Status](https://github.com/TractorZoom/equipment-attributes/workflows/publish/badge.svg)](https://github.com/TractorZoom/equipment-attributes/actions) [![PR Verify Status](https://github.com/TractorZoom/equipment-attributes/workflows/pull_request/badge.svg)](https://github.com/TractorZoom/equipment-attributes/actions)
 
 ## Install
 

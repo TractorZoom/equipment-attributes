@@ -41,14 +41,14 @@ import {
     WIDTH,
     YEAR,
     ZIP_CODE,
-} from './attributes'
-import {CATEGORIES} from './categories'
+} from './attributes';
+import { CATEGORIES } from './categories';
 
-export const IDENTIFYING_ATTRIBUTES = [YEAR, MAKE, MODEL, CATEGORY, SUBCATEGORY]
+export const IDENTIFYING_ATTRIBUTES = [YEAR, MAKE, MODEL, CATEGORY, SUBCATEGORY];
 
-export const LOCATION_ATTRIBUTES = [LOT_NUMBER, CITY, STATE, ZIP_CODE]
+export const LOCATION_ATTRIBUTES = [LOT_NUMBER, CITY, STATE, ZIP_CODE];
 
-export const VALUE_ATTRIBUTES = [PRICE]
+export const VALUE_ATTRIBUTES = [PRICE];
 
 export const COMMON_ATTRIBUTES = [
     ...IDENTIFYING_ATTRIBUTES,
@@ -57,7 +57,7 @@ export const COMMON_ATTRIBUTES = [
     CONDITION,
     DESCRIPTION,
     SERIAL,
-]
+];
 
 const ATTRIBUTES_BY_CATEGORY = {
     [CATEGORIES.AG_TRAILERS.name]: [LENGTH],
@@ -91,8 +91,8 @@ const ATTRIBUTES_BY_CATEGORY = {
         REAR_TIRES,
         THREE_POINT_HITCH,
     ],
-}
+};
 
 export const getAttributesForCategory = (categoryName) => {
-    return [...COMMON_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]]
-}
+    return [...COMMON_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]];
+};

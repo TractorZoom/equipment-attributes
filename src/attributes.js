@@ -1,5 +1,5 @@
-const categories = require('./categories')
-const units = require('./units')
+const categories = require('./categories');
+const units = require('./units');
 
 /* 
     Input of number of acres worked
@@ -8,7 +8,7 @@ export const ACRES = {
     input: true,
     inputType: 'number',
     name: 'acres',
-}
+};
 
 /*
     Switch if equipment has belly mower
@@ -16,7 +16,7 @@ export const ACRES = {
 export const BELLY_MOWER = {
     name: 'bellyMower',
     switch: true,
-}
+};
 
 /*
     Select of cab types
@@ -35,7 +35,7 @@ export const CAB = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Input of capacity of equipment
@@ -45,7 +45,7 @@ export const CAPACITY = {
     inputType: 'number',
     name: 'capacity',
     unitOptions: [units.GALLONS, units.TONS],
-}
+};
 
 /*
     Select of equipment categories
@@ -55,7 +55,7 @@ export const CATEGORY = {
     name: 'category',
     options: categories.CATEGORY_LIST,
     select: true,
-}
+};
 
 /*
     Switch if equipment is center bulk fill
@@ -63,7 +63,7 @@ export const CATEGORY = {
 export const CENTER_BULK_FILL = {
     name: 'centerBulkFill',
     switch: true,
-}
+};
 
 /*
     Input of city
@@ -72,7 +72,7 @@ export const CITY = {
     input: true,
     inputType: 'string',
     name: 'city',
-}
+};
 
 /*
     Switch if equipment has chopper
@@ -80,7 +80,7 @@ export const CITY = {
 export const CHOPPER = {
     name: 'chopper',
     switch: true,
-}
+};
 
 /*
     Select of equipment condition
@@ -100,7 +100,7 @@ export const CONDITION = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Input of auctioneer description
@@ -109,7 +109,7 @@ export const DESCRIPTION = {
     input: true,
     inputType: 'string',
     name: 'description',
-}
+};
 
 /*
     Select of equipment drive
@@ -144,7 +144,7 @@ export const DRIVE = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Select of emission types
@@ -171,7 +171,7 @@ export const EMISSIONS = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Select of front tire types
@@ -194,7 +194,7 @@ export const FRONT_TIRES = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Input of equipment hours
@@ -203,7 +203,7 @@ export const HOURS = {
     input: true,
     inputType: 'number',
     name: 'hours',
-}
+};
 
 /*
     Input of equipment horsepower
@@ -212,7 +212,7 @@ export const HORSEPOWER = {
     input: true,
     inputType: 'number',
     name: 'horsepower',
-}
+};
 
 /*
     Input of equipment length
@@ -222,7 +222,7 @@ export const LENGTH = {
     inputType: 'number',
     name: 'length',
     unitOptions: [units.FEET, units.INCHES],
-}
+};
 
 /*
     Switch if equipment has loader
@@ -230,7 +230,7 @@ export const LENGTH = {
 export const LOADER = {
     name: 'loader',
     switch: true,
-}
+};
 
 /*
     Input of lot number for equipment in an auction
@@ -239,7 +239,7 @@ export const LOT_NUMBER = {
     input: true,
     inputType: 'string',
     name: 'lotNumber',
-}
+};
 
 /*
     Select of makes for equipment
@@ -249,7 +249,7 @@ export const MAKE = {
     name: 'make',
     options: [],
     select: true,
-}
+};
 
 /*
     Input of miles driven for equipment
@@ -258,7 +258,7 @@ export const MILES = {
     input: true,
     inputType: 'number',
     name: 'miles',
-}
+};
 
 /*
     Select of models based on make for equipment
@@ -268,7 +268,7 @@ export const MODEL = {
     name: 'model',
     options: [],
     select: true,
-}
+};
 
 /*
     Input of number of bales for equipment
@@ -277,7 +277,7 @@ export const NUMBER_OF_BALES = {
     input: true,
     inputType: 'number',
     name: 'numberOfBales',
-}
+};
 
 /*
     Input of number of bottoms for equipment
@@ -286,7 +286,7 @@ export const NUMBER_OF_BOTTOMS = {
     input: true,
     inputType: 'number',
     name: 'numberOfBottoms',
-}
+};
 
 /*
     Input of number of rows for equipment
@@ -295,7 +295,7 @@ export const NUMBER_OF_ROWS = {
     input: true,
     inputType: 'number',
     name: 'numberOfRows',
-}
+};
 
 /*
     Input of number of shanks for equipment
@@ -304,7 +304,7 @@ export const NUMBER_OF_SHANKS = {
     input: true,
     inputType: 'number',
     name: 'numberOfShanks',
-}
+};
 
 /*
     Input of price for equipment 
@@ -313,7 +313,7 @@ export const PRICE = {
     input: true,
     inputType: 'number',
     name: 'price',
-}
+};
 
 /*
     Switch if equipment has powerfold bin
@@ -321,7 +321,7 @@ export const PRICE = {
 export const POWERFOLD_BIN = {
     name: 'powerfoldBin',
     switch: true,
-}
+};
 
 /*
     Select of rear PTO
@@ -340,7 +340,7 @@ export const REAR_PTO = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Select of rear tire types
@@ -363,7 +363,7 @@ export const REAR_TIRES = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Switch if equipment has row cleaners
@@ -371,7 +371,7 @@ export const REAR_TIRES = {
 export const ROW_CLEANERS = {
     name: 'rowCleaners',
     switch: true,
-}
+};
 
 /*
     Input of row spacing for equipment
@@ -380,7 +380,7 @@ export const ROW_SPACING = {
     input: true,
     inputType: 'number',
     name: 'rowSpacing',
-}
+};
 
 /*
     Input of separator hours for equipment
@@ -389,7 +389,7 @@ export const SEPARATOR_HOURS = {
     input: true,
     inputType: 'number',
     name: 'separatorHours',
-}
+};
 
 /*
     Input of serial number for equipment
@@ -398,7 +398,7 @@ export const SERIAL = {
     input: true,
     inputType: 'string',
     name: 'serial',
-}
+};
 
 /*
     Switch if equipment has spreader
@@ -406,7 +406,7 @@ export const SERIAL = {
 export const SPREADER = {
     name: 'spreader',
     switch: true,
-}
+};
 
 /*
     Input of state
@@ -415,7 +415,7 @@ export const STATE = {
     input: true,
     inputType: 'string',
     name: 'state',
-}
+};
 
 /*
     Select of subcategories based on category for equipment
@@ -425,7 +425,7 @@ export const SUBCATEGORY = {
     name: 'subcategory',
     options: [],
     select: true,
-}
+};
 
 /*
     Switch if equipment has tag axle
@@ -433,7 +433,7 @@ export const SUBCATEGORY = {
 export const TAG_AXLE = {
     name: 'tagAxle',
     switch: true,
-}
+};
 
 /*
     Switch if equipment has three point hitch
@@ -441,7 +441,7 @@ export const TAG_AXLE = {
 export const THREE_POINT_HITCH = {
     name: 'threePointHitch',
     switch: true,
-}
+};
 
 /*
     Select of transmission for other equipment category
@@ -460,7 +460,7 @@ export const TRANSMISSION = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Select of transmission type for tractor category
@@ -483,7 +483,7 @@ export const TRANSMISSION_TYPE = {
         },
     ],
     select: true,
-}
+};
 
 /*
     Input of width for equipment
@@ -493,7 +493,7 @@ export const WIDTH = {
     inputType: 'number',
     name: 'width',
     unitOptions: [units.FEET, units.INCHES],
-}
+};
 
 /*
     Input of year for equipment
@@ -502,7 +502,7 @@ export const YEAR = {
     input: true,
     inputType: 'number',
     name: 'year',
-}
+};
 
 /*
     Input of zip code
@@ -511,4 +511,4 @@ export const ZIP_CODE = {
     input: true,
     inputType: 'number',
     name: 'zipCode',
-}
+};

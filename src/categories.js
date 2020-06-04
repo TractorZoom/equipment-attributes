@@ -6,7 +6,7 @@ const AG_TRAILERS = {
         HEADER_TRAILERS: 'Header Trailers',
         OTHER: 'Other',
     },
-}
+};
 const CHEMICAL_APPLICATORS = {
     name: 'Chemical Applicators',
     subcategories: {
@@ -21,7 +21,7 @@ const CHEMICAL_APPLICATORS = {
         TOOLBARS: 'Toolbars',
         OTHER: 'Other',
     },
-}
+};
 const HARVESTING = {
     name: 'Harvesting',
     subcategories: {
@@ -40,7 +40,7 @@ const HARVESTING = {
         HEADERS_ROW_CROP: 'Headers - Row Crop',
         OTHER: 'Other',
     },
-}
+};
 const HAY_AND_FORAGE = {
     name: 'Hay and Forage',
     subcategories: {
@@ -59,7 +59,7 @@ const HAY_AND_FORAGE = {
         WINDROWERS: 'Windrowers',
         OTHER: 'Other',
     },
-}
+};
 const MANURE_HANDLING = {
     name: 'Manure Handling',
     subcategories: {
@@ -69,7 +69,7 @@ const MANURE_HANDLING = {
         POULTRY_LITTER_EQUIPMENT: 'Poultry Litter Equipment',
         OTHER: 'Other',
     },
-}
+};
 const OTHER_EQUIPMENT = {
     name: 'Other Equipment',
     subcategories: {
@@ -92,7 +92,7 @@ const OTHER_EQUIPMENT = {
         VEHICLES: 'Vehicles',
         OTHER: 'Other',
     },
-}
+};
 const PLANTING = {
     name: 'Planting',
     subcategories: {
@@ -103,7 +103,7 @@ const PLANTING = {
         SEED_TENDERS: 'Seed Tenders',
         OTHER: 'Other',
     },
-}
+};
 const TILLAGE = {
     name: 'Tillage',
     subcategories: {
@@ -121,7 +121,7 @@ const TILLAGE = {
         VERTICAL_TILLAGE: 'Vertical Tillage',
         OTHER: 'Other',
     },
-}
+};
 const TRACTORS = {
     name: 'Tractors',
     subcategories: {
@@ -131,7 +131,7 @@ const TRACTORS = {
         '175_TO_299': '175 to 299 HP',
         '300_PLUS': '300 or more HP',
     },
-}
+};
 
 export const CATEGORIES = {
     AG_TRAILERS,
@@ -143,14 +143,14 @@ export const CATEGORIES = {
     PLANTING,
     TILLAGE,
     TRACTORS,
-}
+};
 
-export const CATEGORY_LIST = Object.values(CATEGORIES)
+export const CATEGORY_LIST = Object.values(CATEGORIES);
 
 export const getSubcategoriesForCategory = (categoryName) => {
-    const categoryKey = Object.keys(CATEGORIES).find((key) => CATEGORIES[key].name === categoryName)
+    const categoryKey = Object.keys(CATEGORIES).find((key) => CATEGORIES[key].name === categoryName);
 
     return Object.keys(CATEGORIES[categoryKey].subcategories).map(
         (subcategory) => CATEGORIES[categoryKey].subcategories[subcategory]
-    )
-}
+    );
+};
