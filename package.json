@@ -4,10 +4,6 @@
     "description": "Source of truth for equipment attributes by category",
     "author": "Tractor Zoom",
     "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/TractorZoom/equipment-attributes.git"
-    },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
     },
@@ -44,5 +40,21 @@
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/TractorZoom/equipment-attributes.git"
+    },
+    "homepage": "https://github.com/TractorZoom/equipment-attributes",
+    "bugs": {
+        "url": "https://github.com/TractorZoom/equipment-attributes/issues"
+    },
+    "keywords": [
+        "equipment",
+        "equipment-attributes",
+        "farm",
+        "farm-equipment",
+        "make",
+        "model"
+    ]
 }
