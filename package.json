@@ -5,7 +5,7 @@
     "author": "Tractor Zoom",
     "license": "ISC",
     "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
+        "access": "public"
     },
     "engines": {
         "node": "12.x"
