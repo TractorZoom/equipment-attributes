@@ -8,17 +8,6 @@ Source of truth for equipment attributes by category
 
 ## Install
 
-To download make sure the Tractor Zoom GitHub org has been added to your projects `.npmrc` file:
-
-**Note: set registry value to whatever registry you are currently using**
-
-```
-registry=https://registry.npmjs.org
-@tractorzoom:registry=https://npm.pkg.github.com
-```
-
-Then:
-
 ```
 npm i --save @tractorzoom/equipment-attributes
 ```
