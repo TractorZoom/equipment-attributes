@@ -184,31 +184,31 @@ export const EQUIPMENT_CONDITION = {
             description:
                 'The implement has seen little or no use in the field. Engine is in perfect condition with 0 to 600 hrs. of use. Tires have90 to 100% tread remaining, and no breaks or cracks. The paint is original and bright in appearance. The parts have little or no wear. Wellcared for.',
             name: 'Excellent',
-            value: 0,
+            value: 1,
         },
         {
             description:
                 'Engine is in good running condition. Tires have about 80% of the tread remaining. The paint is original or has a goodrepaint job. The implement is utilized as if it were in excellent condition and only requires routine maintenance to maintain its runningcondition.',
             name: 'Good',
-            value: 1,
+            value: 2,
         },
         {
             description:
                 'Engine will require some minor maintenance in order to extend its life in the foreseeable future. The generalappearance of the implement is showing wear but it can still be utilized for the use for which it was originally built. Tires have about 70% oftheir tread.',
             name: 'Average',
-            value: 2,
+            value: 3,
         },
         {
             description:
                 'Replacement of parts would enhance performance. Tires have only 60% tread remaining with possibly some scarsvisible. Paint is weathered and shows some signs of rust. Parts are wearing. Functionally the implement is still useful but to a much lesserextent.',
             name: 'Fair',
-            value: 3,
+            value: 4,
         },
         {
             description:
                 'Needs major overhaul to restore power or performance. Tires have 50% wear or less tread remaining with scars andcracks. Paint and appearance are rough. Bearings appear to need replacement. Rebuilding is necessary.',
             name: 'Poor',
-            value: 4,
+            value: 5,
         },
     ],
     select: true,
