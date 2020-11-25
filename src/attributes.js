@@ -7,6 +7,7 @@ const units = require('./units');
 export const ACRES = {
     input: true,
     inputType: 'number',
+    label: 'Acres',
     name: 'acres',
 };
 
@@ -14,6 +15,7 @@ export const ACRES = {
     Switch if equipment has belly mower
 */
 export const BELLY_MOWER = {
+    label: 'Belly Mower',
     name: 'bellyMower',
     switch: true,
 };
@@ -23,6 +25,7 @@ export const BELLY_MOWER = {
     Options: Standard, Deluxe, Buddy Seat
 */
 export const CAB = {
+    label: 'Cab',
     name: 'cab',
     options: [
         {
@@ -41,6 +44,7 @@ export const CAB = {
     Input of capacity of equipment
 */
 export const CAPACITY = {
+    label: 'Capacity',
     input: true,
     inputType: 'number',
     name: 'capacity',
@@ -52,6 +56,7 @@ export const CAPACITY = {
     Options: Ag Trailers, Chemical Applicators, Harvesting, Hay and Forage, Manure Handling, Other Equipment, Planting, Tillage, Tractors
 */
 export const CATEGORY = {
+    label: 'Category',
     name: 'category',
     options: categories.CATEGORY_LIST,
     select: true,
@@ -61,6 +66,7 @@ export const CATEGORY = {
     Switch if equipment is center bulk fill
 */
 export const CENTER_BULK_FILL = {
+    label: 'Center Bulk Fill',
     name: 'centerBulkFill',
     switch: true,
 };
@@ -69,6 +75,7 @@ export const CENTER_BULK_FILL = {
     Input of city
 */
 export const CITY = {
+    label: 'City',
     input: true,
     inputType: 'string',
     name: 'city',
@@ -78,6 +85,7 @@ export const CITY = {
     Switch if equipment has chopper
 */
 export const CHOPPER = {
+    label: 'Chopper',
     name: 'chopper',
     switch: true,
 };
@@ -87,6 +95,7 @@ export const CHOPPER = {
     Options: New, Used
 */
 export const CONDITION = {
+    label: 'Condition',
     name: 'condition',
     default: 'Used',
     options: [
@@ -106,6 +115,7 @@ export const CONDITION = {
     Input of auctioneer description
 */
 export const DESCRIPTION = {
+    label: 'Description',
     input: true,
     inputType: 'string',
     name: 'description',
@@ -116,6 +126,7 @@ export const DESCRIPTION = {
     Options: 
 */
 export const DRIVE = {
+    label: 'Drive',
     name: 'drive',
     options: [
         {
@@ -151,6 +162,7 @@ export const DRIVE = {
     Options: DEF, DPF, EGR, No Emissions
 */
 export const EMISSIONS = {
+    label: 'Emissions',
     name: 'emissions',
     options: [
         {
@@ -178,6 +190,7 @@ export const EMISSIONS = {
     Options: Excellent, Good, Average, Fair, Poor
 */
 export const EQUIPMENT_CONDITION = {
+    label: 'Condition',
     name: 'equipmentCondition',
     options: [
         {
@@ -219,6 +232,7 @@ export const EQUIPMENT_CONDITION = {
     Options: Singles, Duals
 */
 export const FRONT_TIRES = {
+    label: 'Front Tires',
     name: 'frontTires',
     options: [
         {
@@ -243,6 +257,7 @@ export const FRONT_TIRES = {
 export const HOURS = {
     input: true,
     inputType: 'number',
+    label: 'Hours',
     name: 'hours',
 };
 
@@ -252,6 +267,7 @@ export const HOURS = {
 export const HORSEPOWER = {
     input: true,
     inputType: 'number',
+    label: 'Horsepower',
     name: 'horsepower',
 };
 
@@ -261,6 +277,7 @@ export const HORSEPOWER = {
 export const LENGTH = {
     input: true,
     inputType: 'number',
+    label: 'Length',
     name: 'length',
     unitOptions: [units.FEET, units.INCHES],
 };
@@ -269,6 +286,7 @@ export const LENGTH = {
     Switch if equipment has loader
 */
 export const LOADER = {
+    label: 'Loader',
     name: 'loader',
     switch: true,
 };
@@ -279,6 +297,7 @@ export const LOADER = {
 export const LOT_NUMBER = {
     input: true,
     inputType: 'string',
+    label: 'Lot Number',
     name: 'lotNumber',
 };
 
@@ -287,6 +306,7 @@ export const LOT_NUMBER = {
     Options: Dynamic list from database
 */
 export const MAKE = {
+    label: 'Make',
     name: 'make',
     options: [],
     select: true,
@@ -296,6 +316,7 @@ export const MAKE = {
     Input of miles driven for equipment
 */
 export const MILES = {
+    label: 'Miles',
     input: true,
     inputType: 'number',
     name: 'miles',
@@ -306,6 +327,7 @@ export const MILES = {
     Options: Dynamic list from database based on make
 */
 export const MODEL = {
+    label: 'Model',
     name: 'model',
     options: [],
     select: true,
@@ -317,6 +339,7 @@ export const MODEL = {
 export const NUMBER_OF_BALES = {
     input: true,
     inputType: 'number',
+    label: 'Number of Bales',
     name: 'numberOfBales',
 };
 
@@ -326,6 +349,7 @@ export const NUMBER_OF_BALES = {
 export const NUMBER_OF_BOTTOMS = {
     input: true,
     inputType: 'number',
+    label: 'Number of Bottoms',
     name: 'numberOfBottoms',
 };
 
@@ -335,6 +359,7 @@ export const NUMBER_OF_BOTTOMS = {
 export const NUMBER_OF_ROWS = {
     input: true,
     inputType: 'number',
+    label: 'Number of Rows',
     name: 'numberOfRows',
 };
 
@@ -344,6 +369,7 @@ export const NUMBER_OF_ROWS = {
 export const NUMBER_OF_SHANKS = {
     input: true,
     inputType: 'number',
+    label: 'Number of Shanks',
     name: 'numberOfShanks',
 };
 
@@ -353,6 +379,7 @@ export const NUMBER_OF_SHANKS = {
 export const PRICE = {
     input: true,
     inputType: 'number',
+    label: 'Price',
     name: 'price',
 };
 
@@ -360,6 +387,7 @@ export const PRICE = {
     Switch if equipment has powerfold bin
 */
 export const POWERFOLD_BIN = {
+    label: 'Powerfold Bin',
     name: 'powerfoldBin',
     switch: true,
 };
@@ -369,6 +397,7 @@ export const POWERFOLD_BIN = {
     Options: Yes, No
 */
 export const REAR_PTO = {
+    label: 'Rear PTO',
     name: 'rearPTO',
     options: [
         {
@@ -388,6 +417,7 @@ export const REAR_PTO = {
     Options: Singles, Duals
 */
 export const REAR_TIRES = {
+    label: 'Rear Tires',
     name: 'rearTires',
     options: [
         {
@@ -410,6 +440,7 @@ export const REAR_TIRES = {
     Switch if equipment has row cleaners
 */
 export const ROW_CLEANERS = {
+    label: 'Row Cleaners',
     name: 'rowCleaners',
     switch: true,
 };
@@ -420,6 +451,7 @@ export const ROW_CLEANERS = {
 export const ROW_SPACING = {
     input: true,
     inputType: 'number',
+    label: 'Row Spacing',
     name: 'rowSpacing',
 };
 
@@ -429,6 +461,7 @@ export const ROW_SPACING = {
 export const SEPARATOR_HOURS = {
     input: true,
     inputType: 'number',
+    label: 'Separator Hours',
     name: 'separatorHours',
 };
 
@@ -438,6 +471,7 @@ export const SEPARATOR_HOURS = {
 export const SERIAL = {
     input: true,
     inputType: 'string',
+    label: 'Serial No.',
     name: 'serial',
 };
 
@@ -445,6 +479,7 @@ export const SERIAL = {
     Switch if equipment has spreader
 */
 export const SPREADER = {
+    label: 'Spreader',
     name: 'spreader',
     switch: true,
 };
@@ -455,6 +490,7 @@ export const SPREADER = {
 export const STATE = {
     input: true,
     inputType: 'string',
+    label: 'State',
     name: 'state',
 };
 
@@ -463,6 +499,7 @@ export const STATE = {
     Options: Dynamic list from database based on category
 */
 export const SUBCATEGORY = {
+    label: 'Subcategory',
     name: 'subcategory',
     options: [],
     select: true,
@@ -472,6 +509,7 @@ export const SUBCATEGORY = {
     Switch if equipment has tag axle
 */
 export const TAG_AXLE = {
+    label: 'Tag Axle',
     name: 'tagAxle',
     switch: true,
 };
@@ -480,6 +518,7 @@ export const TAG_AXLE = {
     Switch if equipment has three point hitch
 */
 export const THREE_POINT_HITCH = {
+    label: 'Three Point Hitch',
     name: 'threePointHitch',
     switch: true,
 };
@@ -489,6 +528,7 @@ export const THREE_POINT_HITCH = {
     Options: Automatic, Manual
 */
 export const TRANSMISSION = {
+    label: 'Transmission',
     name: 'transmission',
     options: [
         {
@@ -508,6 +548,7 @@ export const TRANSMISSION = {
     Options: Powershift, Hydrostatic, Standard
 */
 export const TRANSMISSION_TYPE = {
+    label: 'Transmission Type',
     name: 'transmissionType',
     options: [
         {
@@ -532,6 +573,7 @@ export const TRANSMISSION_TYPE = {
 export const WIDTH = {
     input: true,
     inputType: 'number',
+    label: 'Width',
     name: 'width',
     unitOptions: [units.FEET, units.INCHES],
 };
@@ -542,6 +584,7 @@ export const WIDTH = {
 export const YEAR = {
     input: true,
     inputType: 'number',
+    label: 'Year',
     name: 'year',
 };
 
@@ -551,5 +594,6 @@ export const YEAR = {
 export const ZIP_CODE = {
     input: true,
     inputType: 'number',
+    label: 'Zip',
     name: 'zipCode',
 };
