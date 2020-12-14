@@ -30,9 +30,9 @@ import {
     REAR_TIRES,
     REAR_PTO,
     ROW_CLEANERS,
-    ROW_SPACING,
     SEPARATOR_HOURS,
     SERIAL,
+    SPACING,
     SPREADER,
     STATE,
     SUBCATEGORY,
@@ -87,8 +87,8 @@ test('attributes for harvesting', () => {
         FRONT_TIRES,
         NUMBER_OF_ROWS,
         POWERFOLD_BIN,
-        ROW_SPACING,
         SEPARATOR_HOURS,
+        SPACING,
         SPREADER,
         WIDTH,
     ];
@@ -136,7 +136,7 @@ test('attributes for planting', () => {
         CENTER_BULK_FILL,
         NUMBER_OF_ROWS,
         ROW_CLEANERS,
-        ROW_SPACING,
+        SPACING,
         WIDTH,
     ];
 
@@ -150,7 +150,7 @@ test('attributes for tillage', () => {
         NUMBER_OF_BOTTOMS,
         NUMBER_OF_ROWS,
         NUMBER_OF_SHANKS,
-        ROW_SPACING,
+        SPACING,
         WIDTH,
     ];
 
