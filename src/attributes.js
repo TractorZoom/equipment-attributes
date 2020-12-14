@@ -446,16 +446,6 @@ export const ROW_CLEANERS = {
 };
 
 /*
-    Input of row spacing for equipment
-*/
-export const ROW_SPACING = {
-    input: true,
-    inputType: 'number',
-    label: 'Row Spacing',
-    name: 'rowSpacing',
-};
-
-/*
     Input of separator hours for equipment
 */
 export const SEPARATOR_HOURS = {
@@ -473,6 +463,16 @@ export const SERIAL = {
     inputType: 'string',
     label: 'Serial No.',
     name: 'serial',
+};
+
+/*
+    Input of spacing for equipment
+*/
+export const SPACING = {
+    input: true,
+    inputType: 'number',
+    label: 'Spacing',
+    name: 'spacing',
 };
 
 /*
