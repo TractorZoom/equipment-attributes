@@ -1,3 +1,3 @@
 module.exports = {
-    extends: ['@commitlint/config-conventional'],
+    extends: ['@tractorzoom/commitlint-config'],
 };
