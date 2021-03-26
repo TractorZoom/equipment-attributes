@@ -20,7 +20,7 @@
     },
     "devDependencies": {
         "@babel/cli": "7.13.10",
-        "@babel/core": "7.13.10",
+        "@babel/core": "7.13.13",
         "@babel/preset-env": "7.13.12",
         "@tractorzoom/commitizen-config": "0.1.0",
         "@tractorzoom/commitlint-config": "0.1.1",
