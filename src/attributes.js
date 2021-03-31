@@ -1,7 +1,7 @@
 const categories = require('./categories');
 const units = require('./units');
 
-/* 
+/*
     Input of number of acres worked
 */
 export const ACRES = {
@@ -123,7 +123,7 @@ export const DESCRIPTION = {
 
 /*
     Select of equipment drive
-    Options: 
+    Options:
 */
 export const DRIVE = {
     label: 'Drive',
@@ -279,7 +279,7 @@ export const LENGTH = {
     inputType: 'number',
     label: 'Length',
     name: 'length',
-    unitOptions: [units.FEET, units.INCHES],
+    unitOptions: [units.FEET],
 };
 
 /*
@@ -374,7 +374,7 @@ export const NUMBER_OF_SHANKS = {
 };
 
 /*
-    Input of price for equipment 
+    Input of price for equipment
 */
 export const PRICE = {
     input: true,
@@ -473,6 +473,7 @@ export const SPACING = {
     inputType: 'number',
     label: 'Spacing',
     name: 'spacing',
+    unitOptions: [units.INCHES],
 };
 
 /*
