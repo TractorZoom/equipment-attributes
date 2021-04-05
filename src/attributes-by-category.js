@@ -247,7 +247,7 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [SPREADER.name]: null,
         [THREE_POINT_HITCH.name]: null,
     },
-    [CATEGORIES.name.PLANTING.name]: {
+    [CATEGORIES.PLANTING.name]: {
         [BELLY_MOWER.name]: null,
         [CAB.name]: null,
         [CAPACITY.name]: null,
