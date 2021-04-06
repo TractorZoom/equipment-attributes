@@ -545,30 +545,6 @@ export const TRANSMISSION = {
 };
 
 /*
-    Select of transmission type for tractor category
-    Options: Powershift, Hydrostatic, Standard
-*/
-export const TRANSMISSION_TYPE = {
-    label: 'Transmission Type',
-    name: 'transmissionType',
-    options: [
-        {
-            name: 'Powershift',
-            value: 0,
-        },
-        {
-            name: 'Hydrostatic',
-            value: 1,
-        },
-        {
-            name: 'Standard',
-            value: 2,
-        },
-    ],
-    select: true,
-};
-
-/*
     Input of width for equipment
 */
 export const WIDTH = {
@@ -640,7 +616,6 @@ export const getAllAttributes = () => [
     TAG_AXLE,
     THREE_POINT_HITCH,
     TRANSMISSION,
-    TRANSMISSION_TYPE,
     WIDTH,
     YEAR,
     ZIP_CODE,

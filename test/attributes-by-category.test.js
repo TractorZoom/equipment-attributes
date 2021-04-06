@@ -39,7 +39,6 @@ import {
     TAG_AXLE,
     THREE_POINT_HITCH,
     TRANSMISSION,
-    TRANSMISSION_TYPE,
     WIDTH,
     YEAR,
     ZIP_CODE,
@@ -93,7 +92,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
         [WIDTH.name]: null,
     },
     [CATEGORIES.CHEMICAL_APPLICATORS.name]: {
@@ -120,7 +118,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
     },
     [CATEGORIES.HARVESTING.name]: {
         [ACRES.name]: null,
@@ -142,7 +139,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
     },
     [CATEGORIES.HAY_AND_FORAGE.name]: {
         [BELLY_MOWER.name]: null,
@@ -170,7 +166,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
     },
     [CATEGORIES.MANURE_HANDLING.name]: {
         [ACRES.name]: null,
@@ -196,7 +191,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
     },
     [CATEGORIES.OTHER_EQUIPMENT.name]: {
         [ACRES.name]: null,
@@ -244,7 +238,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
     },
     [CATEGORIES.TILLAGE.name]: {
         [ACRES.name]: null,
@@ -271,7 +264,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
     },
     [CATEGORIES.TRACTORS.name]: {
         [ACRES.name]: null,
@@ -292,7 +284,6 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [SPREADER.name]: null,
         [TAG_AXLE.name]: null,
         [TRANSMISSION.name]: null,
-        [TRANSMISSION_TYPE.name]: null,
         [WIDTH.name]: null,
     },
 };
@@ -355,7 +346,6 @@ test('attributes for other equipment', () => {
         MILES,
         TAG_AXLE,
         TRANSMISSION,
-        TRANSMISSION_TYPE,
         WIDTH,
     ];
 
