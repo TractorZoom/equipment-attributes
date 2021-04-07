@@ -10,5 +10,6 @@ module.exports = {
     UNITS: units,
     VALUE_ATTRIBUTES: attributesByCategory.VALUE_ATTRIBUTES,
     getAttributesForCategory: attributesByCategory.getAttributesForCategory,
+    getClearableAttributesForCategory: attributesByCategory.getClearableAttributesForCategory,
     getSubcategoriesForCategory: categories.getSubcategoriesForCategory,
 };

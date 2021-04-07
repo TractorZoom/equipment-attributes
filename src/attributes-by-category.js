@@ -42,6 +42,7 @@ import {
     WIDTH,
     YEAR,
     ZIP_CODE,
+    getAllAttributes,
 } from './attributes';
 import { CATEGORIES } from './categories';
 
@@ -97,4 +98,20 @@ const ATTRIBUTES_BY_CATEGORY = {
 
 export const getAttributesForCategory = (categoryName) => {
     return [...COMMON_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]];
+};
+
+export const getClearableAttributesForCategory = (categoryName) => {
+    const allAttributes = getAllAttributes();
+    const attributesNotToClear = getAttributesForCategory(categoryName);
+    const nulledIrrelevantAttributes = {};
+
+    allAttributes.forEach((attribute) => {
+        const doNotClear = attributesNotToClear.find((att) => att.name === attribute.name);
+
+        if (!doNotClear) {
+            nulledIrrelevantAttributes[attribute.name] = null;
+        }
+    });
+
+    return nulledIrrelevantAttributes;
 };

@@ -545,30 +545,6 @@ export const TRANSMISSION = {
 };
 
 /*
-    Select of transmission type for tractor category
-    Options: Powershift, Hydrostatic, Standard
-*/
-export const TRANSMISSION_TYPE = {
-    label: 'Transmission Type',
-    name: 'transmissionType',
-    options: [
-        {
-            name: 'Powershift',
-            value: 0,
-        },
-        {
-            name: 'Hydrostatic',
-            value: 1,
-        },
-        {
-            name: 'Standard',
-            value: 2,
-        },
-    ],
-    select: true,
-};
-
-/*
     Input of width for equipment
 */
 export const WIDTH = {
@@ -598,3 +574,49 @@ export const ZIP_CODE = {
     label: 'Zip',
     name: 'zipCode',
 };
+
+export const getAllAttributes = () => [
+    ACRES,
+    BELLY_MOWER,
+    CAB,
+    CAPACITY,
+    CATEGORY,
+    CENTER_BULK_FILL,
+    CITY,
+    CHOPPER,
+    CONDITION,
+    DESCRIPTION,
+    DRIVE,
+    EMISSIONS,
+    EQUIPMENT_CONDITION,
+    FRONT_TIRES,
+    HOURS,
+    HORSEPOWER,
+    LENGTH,
+    LOADER,
+    LOT_NUMBER,
+    MAKE,
+    MILES,
+    MODEL,
+    NUMBER_OF_BALES,
+    NUMBER_OF_BOTTOMS,
+    NUMBER_OF_ROWS,
+    NUMBER_OF_SHANKS,
+    PRICE,
+    POWERFOLD_BIN,
+    REAR_PTO,
+    REAR_TIRES,
+    ROW_CLEANERS,
+    SEPARATOR_HOURS,
+    SERIAL,
+    SPACING,
+    SPREADER,
+    STATE,
+    SUBCATEGORY,
+    TAG_AXLE,
+    THREE_POINT_HITCH,
+    TRANSMISSION,
+    WIDTH,
+    YEAR,
+    ZIP_CODE,
+];
