@@ -93,6 +93,10 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
         [WIDTH.name]: null,
+        gallon: null,
+        ton: null,
+        widthFeet: null,
+        widthInches: null,
     },
     [CATEGORIES.CHEMICAL_APPLICATORS.name]: {
         [ACRES.name]: null,
@@ -139,6 +143,8 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
+        gallon: null,
+        ton: null,
     },
     [CATEGORIES.HAY_AND_FORAGE.name]: {
         [BELLY_MOWER.name]: null,
@@ -166,6 +172,8 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
+        gallon: null,
+        ton: null,
     },
     [CATEGORIES.MANURE_HANDLING.name]: {
         [ACRES.name]: null,
@@ -238,6 +246,8 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
+        gallon: null,
+        ton: null,
     },
     [CATEGORIES.TILLAGE.name]: {
         [ACRES.name]: null,
@@ -264,6 +274,8 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [THREE_POINT_HITCH.name]: null,
         [TRANSMISSION.name]: null,
+        gallon: null,
+        ton: null,
     },
     [CATEGORIES.TRACTORS.name]: {
         [ACRES.name]: null,
@@ -285,6 +297,10 @@ const ATTRIBUTES_TO_CLEAR_BY_CATEGORY = {
         [TAG_AXLE.name]: null,
         [TRANSMISSION.name]: null,
         [WIDTH.name]: null,
+        gallon: null,
+        ton: null,
+        widthFeet: null,
+        widthInches: null,
     },
 };
 

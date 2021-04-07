@@ -110,6 +110,16 @@ export const getClearableAttributesForCategory = (categoryName) => {
 
         if (!doNotClear) {
             nulledIrrelevantAttributes[attribute.name] = null;
+
+            if (attribute.name === CAPACITY.name) {
+                nulledIrrelevantAttributes.gallon = null;
+                nulledIrrelevantAttributes.ton = null;
+            }
+
+            if (attribute.name === WIDTH.name) {
+                nulledIrrelevantAttributes.widthFeet = null;
+                nulledIrrelevantAttributes.widthInches = null;
+            }
         }
     });
 
