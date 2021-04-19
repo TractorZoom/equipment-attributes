@@ -1,7 +1,7 @@
 const attributesByCategory = require('./attributes-by-category');
 const categories = require('./categories');
-const format = require('./format');
-const location = require('./location');
+const format = require('./utilities/format');
+const location = require('./utilities/location');
 const units = require('./units');
 const variableDetail = require('./variable-detail');
 

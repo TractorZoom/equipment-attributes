@@ -1,5 +1,5 @@
 import { CATEGORIES } from './categories';
-import { formatNumberWithThousandSeparator } from './format';
+import { formatNumberWithThousandSeparator } from './utilities/format';
 
 const getCapacity = ({ gallon, ton }) => {
     if (Boolean(gallon) && parseFloat(gallon) !== 0) {
@@ -30,7 +30,8 @@ const getWidth = ({ widthFeet, widthInches }) => {
     let width = '';
 
     if (widthFeet) width += `${widthFeet} Ft`;
-    if (widthInches) width += ` ${widthInches} In`;
+    if (widthFeet && widthInches) width += ' ';
+    if (widthInches) width += `${widthInches} In`;
 
     return width.length ? width : '--- Ft';
 };
