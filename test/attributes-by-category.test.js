@@ -329,8 +329,8 @@ test('attributes for harvesting', () => {
         NUMBER_OF_ROWS,
         POWERFOLD_BIN,
         CHOPPER,
-        SPACING,
         SPREADER,
+        SPACING,
         WIDTH,
     ];
 
