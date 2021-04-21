@@ -73,8 +73,8 @@ const ATTRIBUTES_BY_CATEGORY = {
         NUMBER_OF_ROWS,
         POWERFOLD_BIN,
         CHOPPER,
-        SPACING,
         SPREADER,
+        SPACING,
         WIDTH,
     ],
     [CATEGORIES.HAY_AND_FORAGE.name]: [HOURS, ACRES, NUMBER_OF_BALES, WIDTH],
@@ -84,15 +84,15 @@ const ATTRIBUTES_BY_CATEGORY = {
     [CATEGORIES.TILLAGE.name]: [NUMBER_OF_BOTTOMS, NUMBER_OF_ROWS, NUMBER_OF_SHANKS, SPACING, WIDTH],
     [CATEGORIES.TRACTORS.name]: [
         HOURS,
-        BELLY_MOWER,
         CAB,
         DRIVE,
         HORSEPOWER,
+        BELLY_MOWER,
         LOADER,
+        THREE_POINT_HITCH,
         REAR_PTO,
         FRONT_TIRES,
         REAR_TIRES,
-        THREE_POINT_HITCH,
     ],
 };
 

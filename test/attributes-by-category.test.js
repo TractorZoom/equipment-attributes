@@ -403,15 +403,15 @@ test('attributes for tractors', () => {
     const expectedAttributes = [
         ...DEFAULT_ATTRIBUTES,
         HOURS,
-        BELLY_MOWER,
         CAB,
         DRIVE,
         HORSEPOWER,
+        BELLY_MOWER,
         LOADER,
+        THREE_POINT_HITCH,
         REAR_PTO,
         FRONT_TIRES,
         REAR_TIRES,
-        THREE_POINT_HITCH,
     ];
 
     expect(actual).toStrictEqual(expectedAttributes);
