@@ -19,8 +19,8 @@
         "test": "jest"
     },
     "devDependencies": {
-        "@babel/cli": "7.13.16",
-        "@babel/core": "7.14.2",
+        "@babel/cli": "7.14.3",
+        "@babel/core": "7.14.3",
         "@babel/preset-env": "7.14.2",
         "@tractorzoom/commitizen-config": "0.1.0",
         "@tractorzoom/commitlint-config": "0.1.1",
