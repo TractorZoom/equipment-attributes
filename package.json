@@ -8,7 +8,7 @@
         "access": "public"
     },
     "engines": {
-        "node": "12.x"
+        "node": "14.x"
     },
     "main": "lib/index.js",
     "scripts": {
