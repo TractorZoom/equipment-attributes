@@ -43,7 +43,11 @@ import {
     YEAR,
     ZIP_CODE,
 } from '../src/attributes';
-import { getAttributesForCategory, getClearableAttributesForCategory } from '../src/attributes-by-category';
+import {
+    getAttributesForCategory,
+    getClearableAttributesForCategory,
+    getTopAttributesForCategory,
+} from '../src/attributes-by-category';
 import { CATEGORIES } from '../src/categories';
 
 const DEFAULT_ATTRIBUTES = [
@@ -437,4 +441,20 @@ test.each`
 
     //then
     expect(actual).toStrictEqual(expected);
+});
+
+describe('Top Attributes', () => {
+    it.each(Object.values(CATEGORIES).map((x) => x.name))(
+        'should return top categories for category: %s',
+        (category) => {
+            //given
+
+            // when
+            const topAttributes = getTopAttributesForCategory(category);
+
+            // then
+            expect(topAttributes.length).toBeGreaterThanOrEqual(1);
+            expect(topAttributes.length).toBeLessThan(3);
+        }
+    );
 });

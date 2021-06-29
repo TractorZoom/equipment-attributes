@@ -16,6 +16,7 @@ module.exports = {
     getAttributesForCategory: attributesByCategory.getAttributesForCategory,
     getClearableAttributesForCategory: attributesByCategory.getClearableAttributesForCategory,
     getLocation: location.getLocation,
+    getTopAttributesForCategory: attributesByCategory.getTopAttributesForCategory,
     getSubcategoriesForCategory: categories.getSubcategoriesForCategory,
     getVariableDetail: variableDetail.getVariableDetail,
 };
