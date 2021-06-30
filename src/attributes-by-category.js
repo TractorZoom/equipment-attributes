@@ -100,6 +100,20 @@ export const getAttributesForCategory = (categoryName) => {
     return [...COMMON_ATTRIBUTES, ...ATTRIBUTES_BY_CATEGORY[categoryName]];
 };
 
+export const getTopAttributesForCategory = (categoryName) => {
+    const importantAttributes = [HOURS.name, HORSEPOWER.name, LENGTH.name, SEPARATOR_HOURS.name];
+    const semiImportantAttributes = [NUMBER_OF_ROWS.name, NUMBER_OF_BOTTOMS.name];
+
+    const attributes = getAttributesForCategory(categoryName);
+    let topAttributes = attributes.filter((attr) => importantAttributes.includes(attr.name));
+
+    if (topAttributes.length < 2) {
+        topAttributes = [...topAttributes, ...attributes.filter((attr) => semiImportantAttributes.includes(attr.name))];
+    }
+
+    return topAttributes;
+};
+
 export const getClearableAttributesForCategory = (categoryName) => {
     const allAttributes = getAllAttributes();
     const attributesNotToClear = getAttributesForCategory(categoryName);
