@@ -23,7 +23,7 @@
         "@babel/core": "7.14.6",
         "@babel/preset-env": "7.14.7",
         "@tractorzoom/commitizen-config": "0.1.1",
-        "@tractorzoom/commitlint-config": "0.1.1",
+        "@tractorzoom/commitlint-config": "0.1.2",
         "@tractorzoom/husky-config": "0.2.0",
         "@tractorzoom/jest-config": "0.3.2",
         "@tractorzoom/prettier-config": "0.1.0",
