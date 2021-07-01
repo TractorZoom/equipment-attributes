@@ -25,7 +25,7 @@
         "@tractorzoom/commitizen-config": "0.1.1",
         "@tractorzoom/commitlint-config": "0.1.2",
         "@tractorzoom/husky-config": "0.2.1",
-        "@tractorzoom/jest-config": "0.3.2",
+        "@tractorzoom/jest-config": "0.3.3",
         "@tractorzoom/prettier-config": "0.1.0",
         "@tractorzoom/semantic-release-config": "0.1.0",
         "chance": "1.1.7"
