@@ -10,7 +10,6 @@ export const ACRES = {
     label: 'Acres',
     name: 'acres',
 };
-
 /*
     Switch if equipment has belly mower
 */
@@ -259,6 +258,7 @@ export const HOURS = {
     inputType: 'number',
     label: 'Hours',
     name: 'hours',
+    shortName: 'Hrs',
 };
 
 /*
@@ -269,6 +269,7 @@ export const HORSEPOWER = {
     inputType: 'number',
     label: 'Horsepower',
     name: 'horsepower',
+    shortName: 'HP',
 };
 
 /*
@@ -280,6 +281,7 @@ export const LENGTH = {
     label: 'Length',
     name: 'length',
     unitOptions: [units.FEET],
+    shortName: 'Ft',
 };
 
 /*
@@ -351,6 +353,7 @@ export const NUMBER_OF_BOTTOMS = {
     inputType: 'number',
     label: 'Number of Bottoms',
     name: 'numberOfBottoms',
+    shortName: 'Bottoms',
 };
 
 /*
@@ -361,6 +364,7 @@ export const NUMBER_OF_ROWS = {
     inputType: 'number',
     label: 'Number of Rows',
     name: 'numberOfRows',
+    shortName: 'Rows',
 };
 
 /*
@@ -453,6 +457,7 @@ export const SEPARATOR_HOURS = {
     inputType: 'number',
     label: 'Separator Hours',
     name: 'separatorHours',
+    shortName: 'Sep Hrs',
 };
 
 /*
